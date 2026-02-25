@@ -1,0 +1,77 @@
+{
+  "start": "intro_1",
+  "nodes": {
+    "intro_1": {
+      "speaker": "Crab",
+      "text": "Oh! Careful where you step.",
+      "next": "intro_2"
+    },
+    "intro_2": {
+      "speaker": "Crab",
+      "text": "I may look like a rock, but I promise I'm not.",
+      "choices": [
+        {
+          "text": "You can talk?",
+          "next": "intro_3"
+        },
+        {
+          "text": "I must be dreaming right now...",
+          "next": "intro_3"
+        }
+      ]
+    },
+    "intro_3": {
+      "speaker": "Crab",
+      "text": "What time is it?",
+      "choices": [
+        {
+          "text": "Morning",
+          "next": "morning_response"
+        },
+        {
+          "text": "Night",
+          "next": "night_response"
+        }
+      ]
+    },
+    "morning_response": {
+      "speaker": "Crab",
+      "text": "Morning? I’ve seen thousands of them.",
+      "next": "intro_4"
+    },
+    "night_response": {
+      "speaker": "Crab",
+      "text": "Night? The ocean glows at night.",
+      "next": "intro_4"
+    },
+    "intro_4": {
+      "speaker": "Crab",
+      "text": "While you're here... Could you help me with something?",
+      "next": "intro_5"
+    },
+    "intro_5": {
+      "speaker": "Crab",
+      "text": "I don't get the chance to talk to people very often.",
+      "choices": [
+        {
+          "text": "What do you want?",
+          "next": "empty"
+        },
+        {
+          "text": "I'll listen...",
+          "next": "empty"
+        }
+      ]
+    },
+    "empty": {
+      "speaker": "Crab",
+      "text": "No, don't listen. I want you to speak.",
+      "next": "empty2"
+    },
+    "empty2": {
+      "speaker": "Crab",
+      "text": "",
+      "next": null
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap");
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #abddff;
+  --surface: #ffffff;
+  --border: #000000;
+  --text: #000000;
+  --text-dim: #000000;
+  --accent: #000000;
+  --accent-dim: #000000;
+  --speaker-color: #000000;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Playfair Display', serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 300px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#dialogue-box {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 2rem 2.5rem 2rem;
+  border-radius: 15px;
+  
+  /* Hidden properties */
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateX(-50%) translateY(-100px);
+  pointer-events: none;
+}
+
+#dialogue-box.visible {
+  transform: translateX(-50%) translateY(0px);
+  display: block;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#dialogue-box.clickable {
+  cursor: pointer;
+}
+
+#speaker {
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  min-height: 1em;
+}
+
+#speaker:empty::before {
+  content: '';
+}
+
+#dialogue-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text);
+  min-height: 2em;
+}
+
+#dialogue-text.has-choices::after { display: none; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#choices {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#choices button {
+  background: transparent;
+  border: 1px solid var(--accent-dim);
+  border-radius: 15px;
+  color: var(--text-dim);
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+#choices button:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: #ccffff;
+}
+
+#choices button:hover::before {
+  color: var(--accent);
+}
+
+#continue-hint {
+  margin-top: 1.25rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  user-select: none;
+}
+
+#continue-hint.visible { 
+  opacity: 1; 
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.text-animate {
+  animation: fadeSlideIn 0.3s ease forwards;
+}
