@@ -4,10 +4,3 @@
   height: 100vh;
   overflow: hidden; /* keeps scene elements from spilling out */
 }
-
-#crab-rock {
-  position: absolute;
-  left: 340px;
-  top: 210px;
-  cursor: pointer;
-}

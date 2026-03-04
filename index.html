@@ -4,13 +4,27 @@
     <title>things don't change</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/dialogue.css" />
+    <link rel="stylesheet" href="src/parallax.css" />
     <link rel="stylesheet" href="src/intro.css" />
   </head>
 
   <body>
-    <div class="main-canvas">
-      <img id='crab-rock' src="images/flowergif.gif">
+    <div id="scene-container">
+      <div class="parallax-item bg" id="sky-bg" data-depth="0.1" data-tilt="0.08"></div>
+      <div class="parallax-item beach" data-depth="0.2" data-tilt="0.09"></div>
+      <div class="parallax-item ocean" data-depth="0.3" data-tilt="0.1"></div>
+      <div class="parallax-item back-hills" data-depth="0.15" data-tilt="0.1"></div>
+      <div class="parallax-item front-hill" data-depth="0.4" data-tilt="0.3"></div>
+      <img class="parallax-item" data-depth="0.4" data-tilt="0.3" id='crab-rock' src="images/testcrab.png">
+      <img class="parallax-item front-rock-left" data-depth="0.5" data-tilt="0.6" src="images/rock.png">
+      <!--
+      <div class="parallax-item mid-planet" data-depth="0.3" data-tilt="0.3">Mid<br>Object</div>
+      <div class="parallax-item mid-panel" data-depth="0.4" data-tilt="0.3">Mid<br>Panel</div>
+
+      <div class="parallax-item front-crystal-right" data-depth="0.5" data-tilt="0.6">Front<br>Right</div>-->
     </div>
+
+    <script src="src/parallax.js"></script>
 
     <div id="dialogue-box">
       <div id="speaker"></div>
@@ -18,6 +32,8 @@
       <div id="choices"></div>
       <div id="continue-hint">click to continue</div>
     </div>
+
   <script src="src/index.js"></script>
+  <script src="src/parallax.js"></script>
   </body>
 </html>
