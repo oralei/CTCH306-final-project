@@ -1,4 +1,5 @@
-document.getElementById('crab-rock').addEventListener('click', () => {
+document.getElementById('crab').addEventListener('click', () => {
+  moveObject('crab', 15, 5)
   loadDialogue('data/intro/intro.json');
 });
 
@@ -92,4 +93,10 @@ function hideDialogueBox() {
     box.style.display = 'none';
     box.style.transform = '';
   }, 500);
+}
+
+function moveObject(id, xPercent, yPercent) {
+  const el = document.getElementById(id);
+  el.style.left = xPercent + "%";
+  el.style.bottom = yPercent + "%";
 }
