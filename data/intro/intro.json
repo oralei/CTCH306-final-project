@@ -4,6 +4,7 @@
     "intro_1": {
       "speaker": "Strange Rock",
       "text": "Oh! Careful where you step.",
+      "event": "play_crab_sound",
       "next": "intro_2"
     },
     "intro_2": {

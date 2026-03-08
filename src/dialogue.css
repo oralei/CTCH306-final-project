@@ -10,13 +10,13 @@
 
 :root {
   --bg: #abddff;
-  --surface: #ffffff;
-  --border: #000000;
-  --text: #000000;
-  --text-dim: #000000;
-  --accent: #000000;
-  --accent-dim: #000000;
-  --speaker-color: #000000;
+  --surface: #f1ebe9;
+  --border: #100929;
+  --text: #100929;
+  --text-dim: #100929;
+  --accent: #100929;
+  --accent-dim: #100929;
+  --speaker-color: #100929;
 }
 
 body {
@@ -125,7 +125,7 @@ body::before {
 #choices button:hover {
   border-color: var(--accent);
   color: var(--text);
-  background: #ccffff;
+  background: #cee5ee;
 }
 
 #choices button:hover::before {

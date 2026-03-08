@@ -1,8 +1,3 @@
-document.getElementById('crab').addEventListener('click', () => {
-  moveObject('crab', 15, 5)
-  loadDialogue('data/intro/intro.json');
-});
-
 // Dialogue engine
 // Loads data from a .json and runs the node graph.
 
@@ -27,6 +22,11 @@ function showNode(nodeKey) {
 
   const node = dialogueData.nodes[nodeKey];
   if (!node) return console.error('Missing node:', nodeKey);
+
+  // Trigger node event
+  if (node.event) {
+    triggerEvent(node.event);
+  }
 
   // Speaker
   speakerEl.textContent = node.speaker || '';
@@ -95,8 +95,30 @@ function hideDialogueBox() {
   }, 500);
 }
 
+function refreshCenter(item) {
+    // Temporarily clear transform so getBoundingClientRect reflects true position
+    const prev = item.style.transform;
+    item.style.transform = '';
+    const rect = item.getBoundingClientRect();
+    centers.set(item, {
+        x: rect.left + rect.width  / 2,
+        y: rect.top  + rect.height / 2,
+        reach: Math.max(rect.width, rect.height) * 2
+    });
+    item.style.transform = prev;
+}
+
 function moveObject(id, xPercent, yPercent) {
   const el = document.getElementById(id);
   el.style.left = xPercent + "%";
   el.style.bottom = yPercent + "%";
+
+  // Re-cache center so parallax tilt uses the new position
+  setTimeout(() => refreshCenter(el), 400);
+}
+
+function scaleObject(id, newValue)
+{
+  const el = document.getElementById(id);
+  el.style.scale = newValue;
 }
