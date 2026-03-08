@@ -31,7 +31,7 @@
       "text": "What time is it?",
       "choices": [
         {
-          "text": "Like around 7:00 PM?",
+          "text": "Like around {time}?",
           "next": "intro_3_2_1"
         },
         {
@@ -70,18 +70,23 @@
         },
         {
           "text": "I'm listening...",
-          "next": "intro_7_2"
+          "next": "intro_7_1_2"
         }
       ]
     },
     "intro_7_1": {
       "speaker": "Crab",
       "text": "Tell me about the past and tell me what it means.",
-      "next": "intro_8"
+      "next": "intro_7_3"
     },
-    "intro_7_2": {
+    "intro_7_1_2": {
       "speaker": "Crab",
-      "text": "No, don't listen. I want you to tell me something! Tell me about the past and tell me what it means.",
+      "text": "No, don't listen.",
+      "next": "intro_7_3"
+    },
+    "intro_7_3": {
+      "speaker": "Crab",
+      "text": "I want you to tell me a story! About the past and what it all means.",
       "next": "intro_8"
     },
     "intro_8": {
@@ -107,6 +112,7 @@
     "intro_empty": {
       "speaker": "",
       "text": "",
+      "event": "switch_scene",
       "next": null
     }
   }

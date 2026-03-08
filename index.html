@@ -37,8 +37,6 @@
 
     </div>
 
-    <script src="src/parallax.js"></script>
-
     <div id="dialogue-box">
       <div id="speaker"></div>
       <div id="dialogue-text"></div>
@@ -47,18 +45,19 @@
     </div>
 
     <!-- Audio -->
-    <audio id="wind" controls autoplay>
+    <audio id="wind" controls autoplay loop>
       <source src="data/coastline/audio/wind.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
 
-  <script src="src/index.js"></script>
+  <script src="src/sceneManager.js"></script>
+  <script src="src/dialogue.js"></script>
   <script src="data/intro/intro.js"></script>
   <script src="src/parallax.js"></script>
 
   <script>
     var audio = document.getElementById("wind");
-    audio.volume = 0.2;
+    audio.volume = 0.1;
   </script>
   </body>
 </html>

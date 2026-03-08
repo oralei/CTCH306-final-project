@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tdc - medieval</title>
+</head>
+<body>
+  <h1>TIS BUT A SCRATCH</h1>
+  <input type="button" id="nextSceneBtn">
+</body>
+ <!-- Instantly makes the page black before anything else loads -->
+  <div id="scene-fade-overlay" style="position: fixed; inset: 0; background: #000; opacity: 1; z-index: 9999; pointer-events: all;"></div>
+  <script src="/src/sceneManager.js"></script>
+  <script src="/src/parallax.js"></script>
+  <script>
+    SceneManager.init('medieval')
+    document.getElementById('nextSceneBtn').addEventListener('click', () => {
+      SceneManager.next();
+    });
+  </script>
+</html>

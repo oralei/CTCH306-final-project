@@ -8,6 +8,10 @@
   src: url(../src/pixel_operator/PixelOperator.ttf); /* url of the font */
 }
 
+#scene-fade-overlay {
+  position: fixed; inset: 0; background: #000; opacity: 1; z-index: 9999; pointer-events: all;
+}
+
 :root {
   --bg: #abddff;
   --surface: #f1ebe9;

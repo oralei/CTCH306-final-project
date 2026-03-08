@@ -1,5 +1,6 @@
 // Dialogue engine
 // Loads data from a .json and runs the node graph.
+console.log("dialogue.js loaded sucessfully!");
 
 const box       = document.getElementById('dialogue-box');
 const speakerEl = document.getElementById('speaker');
@@ -13,6 +14,12 @@ async function loadDialogue() {
   const response = await fetch('data/intro/intro.json');
   dialogueData = await response.json();
   showNode(dialogueData.start);
+}
+
+function applyVariables(text) {
+  return text.replace(/\{(.*?)\}/g, (match, key) => {
+    return dialogueVars[key] ?? match;
+  });
 }
 
 function showNode(nodeKey) {
@@ -33,7 +40,7 @@ function showNode(nodeKey) {
 
   // Animate text in
   textEl.className = 'text-animate';
-  textEl.textContent = node.text;
+  textEl.textContent = applyVariables(node.text);
 
   // Reset state
   choicesEl.innerHTML = '';
@@ -49,7 +56,7 @@ function showNode(nodeKey) {
     textEl.classList.add('has-choices');
     node.choices.forEach(choice => {
       const btn = document.createElement('button');
-      btn.textContent = choice.text;
+      btn.textContent = applyVariables(choice.text);
       btn.onclick = (e) => {
         e.stopPropagation();
         showNode(choice.next);

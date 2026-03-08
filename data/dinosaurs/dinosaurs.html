@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tdc - dino</title>
+  <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
+  <link rel="stylesheet" href="/src/dialogue.css" />
+  <link rel="stylesheet" href="/src/parallax.css" />
+</head>
+<body>
+  <h1>DINOSAUR GHRRR</h1>
+  <input type="button" id="nextSceneBtn">
+</body>
+  <!-- Instantly makes the page black before anything else loads -->
+  <div id="scene-fade-overlay"></div>
+  <script src="/src/sceneManager.js"></script>
+  <script src="/src/parallax.js"></script>
+  <script>
+    SceneManager.init('dinosaurs')
+    document.getElementById('nextSceneBtn').addEventListener('click', () => {
+      SceneManager.next();
+    });
+  </script>
+</html>

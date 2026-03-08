@@ -1,5 +1,5 @@
 const items = document.querySelectorAll('.parallax-item');
-
+console.log("parallax.js loaded sucessfully!");
 const config = {
     maxTranslate: 50,  // Max pixels to slide
     maxRotate: 15,     // Max degrees to tilt
