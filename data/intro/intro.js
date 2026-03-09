@@ -7,14 +7,15 @@ const dialogueVars = {
 };
 
 document.getElementById('crab').addEventListener('click', () => {
-  moveObject('crab', 15, 5);
+  moveObject('crab', 13, 5);
   scaleObject('crab', 1.1)
-  loadDialogue('data/intro/intro.json');
+  loadDialogue('/data/intro/intro.json');
   document.getElementById("crab").src="../data/coastline/media/testCrab.png";
 });
 
 document.getElementById('seagull').addEventListener('click', () => {
   seagullSound.play();
+  loadDialogue('/data/intro/seagull.json');
 });
 
 var crabSound = new Audio('../src/crab-sounds/crabSound1.wav');

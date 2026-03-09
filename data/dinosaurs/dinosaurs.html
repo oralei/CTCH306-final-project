@@ -5,21 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - dino</title>
   <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css" />
-  <link rel="stylesheet" href="/src/parallax.css" />
+  <link rel="stylesheet" href="/src/dialogue.css"/>
+  <link rel="stylesheet" href="/src/parallax.css"/>
+  <link rel="stylesheet" href="/data/intro/intro.css" />
+  <link rel="stylesheet" href="/data/dinosaurs/dinosaurs.css" />
 </head>
+
 <body>
-  <h1>DINOSAUR GHRRR</h1>
-  <input type="button" id="nextSceneBtn">
-</body>
   <!-- Instantly makes the page black before anything else loads -->
   <div id="scene-fade-overlay"></div>
-  <script src="/src/sceneManager.js"></script>
-  <script src="/src/parallax.js"></script>
-  <script>
-    SceneManager.init('dinosaurs')
-    document.getElementById('nextSceneBtn').addEventListener('click', () => {
-      SceneManager.next();
-    });
-  </script>
+
+  <!-- Parallax Elements -->
+  <div id="scene-container">
+    <!-- The lower the line, the more in front the image is (higher depth value) -->
+    <div class="parallax-item parallax-full bg" id="sky-bg" data-depth="0.1" data-tilt="0.08"></div>
+    <div class="parallax-item parallax-full far-trees" data-depth="0.14" data-tilt="0.1"></div>
+    <div class="parallax-item parallax-full back-hills" data-depth="0.15" data-tilt="0.1"></div>
+    <div class="parallax-item parallax-full beach" data-depth="0.2" data-tilt="0.09"></div>
+    <div class="parallax-item parallax-full ocean" data-depth="0.24" data-tilt="0.12"></div>
+    <div class="parallax-item parallax-full" id="far-rocks" data-depth="0.19" data-tilt="0.12"></div>
+    <div class="parallax-item parallax-full" id="mid-rocks" data-depth="0.2" data-tilt="0.15"></div>
+    <div class="parallax-item parallax-full" id="front-hill" data-depth="0.24" data-tilt="0.24"></div>
+    <div class="parallax-item parallax-full" id="close-rocks" data-depth="0.24" data-tilt="0.3"></div>
+
+    <div class="parallax-item test-title">DINOSAUR GHRRR</div>
+    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button>
+
+    <!-- SEAGULL -->
+    <img class="parallax-item" data-depth="0.1" data-tilt="0.4" id='seagull' src="/data/coastline/media/seagull.png">
+
+    <!-- CRAB ! -->
+    <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/dinosaurs/media/crabMain.png">
+
+    <!-- Vignette, Godrays-->
+    <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
+  </div>
+
+  <div id="dialogue-box">
+    <div id="speaker"></div>
+    <div id="dialogue-text"></div>
+    <div id="choices"></div>
+    <div id="continue-hint">click to continue</div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="wind" controls autoplay loop style="display:none">
+    <source src="/data/coastline/audio/wind.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+
+<script src="/src/sceneManager.js"></script>
+<script src="/src/dialogue.js"></script>
+<script src="/src/parallax.js"></script>
+<script src="/data/dinosaurs/dinosaurs.js"></script>
+<script>
+  var audio = document.getElementById("wind");
+  audio.volume = 0.0; // Made silent for now
+</script>
+
 </html>

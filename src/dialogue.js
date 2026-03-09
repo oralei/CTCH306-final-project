@@ -2,6 +2,7 @@
 // Loads data from a .json and runs the node graph.
 console.log("dialogue.js loaded sucessfully!");
 
+// Get elements from page:
 const box       = document.getElementById('dialogue-box');
 const speakerEl = document.getElementById('speaker');
 const textEl    = document.getElementById('dialogue-text');
@@ -10,8 +11,11 @@ const hintEl    = document.getElementById('continue-hint');
 
 let dialogueData;
 
-async function loadDialogue() {
-  const response = await fetch('data/intro/intro.json');
+async function loadDialogue(path) {
+  // reset previous dialogue
+  currentNode = null;
+
+  const response = await fetch(path);
   dialogueData = await response.json();
   showNode(dialogueData.start);
 }

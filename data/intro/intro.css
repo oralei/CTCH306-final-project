@@ -22,10 +22,10 @@
 
 #front-hill {
     background-image: url('../coastline/media/coastSideRocks.png');
-    width: 105vw;
-    height: 105vh;
+    width: 107vw;
+    height: 107vh;
     top: -1%;
-    left: -4%;
+    left: -5%;
 }
 
 
@@ -50,7 +50,7 @@
     position: absolute;
     width: 256px;
     height: 172px;
-    left: 86%;
+    left: 75%;
     bottom: 10%;
     scale: 0.8;
     border: none;

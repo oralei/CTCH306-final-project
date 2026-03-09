@@ -1,0 +1,39 @@
+{
+  "start": "d_1",
+  "nodes": {
+    "d_1": {
+      "speaker": "You",
+      "text": "Woah, this place is...",
+        "choices": [
+        {
+          "text": "Strange",
+          "next": "d_2_1"
+        },
+        {
+          "text": "Awesome",
+          "next": "d_2_2"
+        }
+      ]
+    },
+    "d_2_1": {
+      "speaker": "Crab",
+      "text": "It's from a really long time ago I think.",
+      "next": "d_3"
+    },
+    "d_2_2": {
+      "speaker": "Crab",
+      "text": "You like it? It was quite scary at this time.",
+      "next": "d_3"
+    },
+    "d_3": {
+      "speaker": "Crab",
+      "text": "It was quite noisy.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}

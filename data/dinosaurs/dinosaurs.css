@@ -1,0 +1,14 @@
+#crab {
+    position: absolute;
+    width: 256px;
+    height: 172px;
+    left: 75%;
+    bottom: 10%;
+    scale: 1.3;
+    border: none;
+    cursor: pointer;
+}
+
+#crab:hover {
+    scale: 1.5;
+}

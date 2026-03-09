@@ -1,0 +1,15 @@
+{
+  "start": "seagull_1",
+  "nodes": {
+    "seagull_1": {
+      "speaker": "You",
+      "text": "A flock of seagulls.",
+      "next": "seagull_2"
+    },
+    "seagull_2": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}
