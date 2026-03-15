@@ -9,6 +9,75 @@
     cursor: pointer;
 }
 
+#dino {
+    position: absolute;
+    width: 896px;
+    height: 742px;
+    scale: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.parallax-full {
+    position: absolute;
+    left: -2vw;
+    top: -2vh;
+    width: 103vw;
+    height: 103vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg { background-image: url('../dinosaurs/media/sky.png');}
+
+.clouds { background-image: url('../dinosaurs/media/clouds.png');}
+
+.mountain { background-image: url('../dinosaurs/media/mountain.png');}
+
+.back-forest-1 { background-image: url('../dinosaurs/media/backForest1.png');}
+
+.back-forest-2 { background-image: url('../dinosaurs/media/backForest2.png');}
+
+.ground { background-image: url('../dinosaurs/media/ground.png');}
+
+.back-tree-1 { background-image: url('../dinosaurs/media/backTree1.png');}
+
+.back-tree-2 { background-image: url('../dinosaurs/media/backTree2.png');}
+
+.front-tree-1 { background-image: url('../dinosaurs/media/frontTree1.png');}
+
+.front-tree-2 { background-image: url('../dinosaurs/media/frontTree2.png');}
+
+.front-leaf-1 { background-image: url('../dinosaurs/media/frontLeaf1.png');
+    width: 104vw;
+    height: 104vh;}
+
+.front-leaf-2 { background-image: url('../dinosaurs/media/frontLeaf2.png');
+    width: 104vw;
+    height: 104vh;}
+
+.palm-1 { background-image: url('../dinosaurs/media/palm1.png');
+    width: 104vw;
+    height: 104vh;}
+
+.palm-2 { background-image: url('../dinosaurs/media/palm2.png');
+    width: 104vw;
+    height: 104vh;}
+
+.palm-3 { background-image: url('../dinosaurs/media/palm3.png');
+    width: 104vw;
+    height: 104vh;}
+
+.bush-1 { background-image: url('../dinosaurs/media/bush1.png');
+    width: 104vw;
+    height: 104vh;}
+
+
 #crab:hover {
     scale: 1.5;
+}
+
+#dino:hover {
+    scale: 1.04;
 }
