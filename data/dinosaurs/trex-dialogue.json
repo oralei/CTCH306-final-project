@@ -1,0 +1,100 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "You",
+      "text": "That's a dinosaur isn't it?",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "Crab",
+      "text": "A dinosaur? I suppose that's what you could call it.",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "Crab",
+      "text": "There have been many big things that come and go.",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "Crab",
+      "text": "It's strange isn't it?",
+      "next": "5"
+    },
+    "5": {
+      "speaker": "Crab",
+      "text": "The world was ruled by creatures this big... but now? They're no more...",
+      "next": "7"
+    },
+    "7": {
+      "speaker": "Crab",
+      "text": "What do you think?",
+        "choices": [
+        {
+          "text": "It's not strange at all",
+          "next": "8"
+        }
+      ]
+    },
+    "8": {
+      "speaker": "Crab",
+      "text": "And why is that? It feels meaningless, no? Being the mightiest of all, just... to end up as nothing again.",
+      "next": "8.2"
+    },
+    "8.2": {
+      "speaker": "Crab",
+      "text": "And why is that? It feels meaningless, no? Being the mightiest of all, just... to end up as nothing again.",
+        "choices": [
+        {
+          "text": "That's just life. Even if we're here only briefly, that doesn't mean we don't matter.",
+          "next": "9"
+        }
+      ]
+    },
+    "9": {
+      "speaker": "Crab",
+      "text": "But, I am the opposite.",
+      "next": "10"
+    },
+    "10": {
+      "speaker": "Crab",
+      "text": "I've been here for so long and am insignificant.",
+      "next": "10.2"
+    },
+    "10.2": {
+      "speaker": "Crab",
+      "text": "I've been here for so long and am insignificant.",
+        "choices": [
+        {
+          "text": "The dinosaurs were only here briefly, but to them, their ruling was for their own eternity.",
+          "next": "10.3"
+        }
+      ]
+    },
+    "10.3": {
+      "speaker": "Crab",
+      "text": "...Then it wasn’t the time that mattered, was it?",
+      "next": "11"
+    },
+    "11": {
+      "speaker": "You",
+      "text": "Time was never the source of their meaning in the first place. And it doesn't have to be yours.",
+      "next": "12"
+    },
+    "12": {
+      "speaker": "Crab",
+      "text": "That is an interesting thought.",
+      "next": "13"
+    },
+    "13": {
+      "speaker": "Crab",
+      "text": "I shall dwell on it. Thank you.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}
