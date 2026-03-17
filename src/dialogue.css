@@ -52,12 +52,10 @@ body::before {
   z-index: 100;
   width: 100%;
   max-width: 640px;
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   background: var(--surface);
   padding: 2rem 2.5rem 2rem;
   border-radius: 15px;
-
-  filter: drop-shadow(0 1.2mm 0.35rem rgba(0, 0, 0, 0.575));
   
   /* Hidden properties */
   opacity: 0;
@@ -116,8 +114,8 @@ body::before {
 
 #choices button {
   background: transparent;
-  border: 1px solid var(--accent-dim);
-  border-radius: 15px;
+  border: 2px solid var(--accent-dim);
+  border-radius: 12px;
   color: var(--text-dim);
   font-family: 'PixelOperator';
   font-size: 1.2rem;

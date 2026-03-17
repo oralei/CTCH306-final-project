@@ -1,0 +1,51 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "You",
+      "text": "Is that what I think it is?",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "Crab",
+      "text": "What are you talking about?",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "You",
+      "text": "The big glowing ball of heat in the sky!",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "Crab",
+      "text": "You mean the sun?",
+      "choices": [
+        {
+          "text": "The other one!",
+          "next": "4.2"
+        }
+      ]
+    },
+    "4.2": {
+      "speaker": "You",
+      "text": "No! The other big glowing ball of heat in the sky!",
+      "next": "5"
+    },
+    "5": {
+      "speaker": "Crab",
+      "text": "Oh yes. That one. I remember it quite well.",
+      "next": "6"
+    },
+    "6": {
+      "speaker": "Crab",
+      "text": "We should probably get going now.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "event": "meteor_crash",
+      "next": null
+    }
+  }
+}

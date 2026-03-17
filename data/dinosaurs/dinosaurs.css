@@ -18,6 +18,25 @@
     cursor: pointer;
 }
 
+.meteor {
+    position: absolute;
+    width: 257px;
+    height: 238px;
+    left: 55%;
+    bottom: 75%;
+    scale: 1;
+    border: none;
+    background-image: url('../dinosaurs/media/meteor1.png');
+    cursor: pointer;
+
+    animation: meteorChange 1.2s infinite;
+}
+
+@keyframes meteorChange {
+  from {background-image: url('../dinosaurs/media/meteor1.png');}
+  to {background-image: url('../dinosaurs/media/meteor2.png');}
+}
+
 .parallax-full {
     position: absolute;
     left: -2vw;
@@ -30,6 +49,8 @@
 }
 
 .bg { background-image: url('../dinosaurs/media/sky.png');}
+
+.red-sky { background-image: url('../dinosaurs/media/redSky.png');}
 
 .clouds { background-image: url('../dinosaurs/media/clouds.png');}
 

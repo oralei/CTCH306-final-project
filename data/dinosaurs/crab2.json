@@ -2,29 +2,29 @@
   "start": "1",
   "nodes": {
     "1": {
-      "speaker": "You",
-      "text": "Is that what I think it is?",
+      "speaker": "Crab",
+      "text": "I have been thinking about what you said.",
       "next": "2"
     },
     "2": {
       "speaker": "Crab",
-      "text": "Oh, that's the big hot glowy thing.",
+      "text": "If meaning comes from how we use our time...",
       "next": "3"
     },
     "3": {
-      "speaker": "You",
-      "text": "You like it? It was quite scary at this time.",
+      "speaker": "Crab",
+      "text": "Then I should be more thoughtful of it.",
       "next": "4"
     },
     "4": {
       "speaker": "Crab",
-      "text": "It was quite noisy.",
+      "text": "Perhaps I will count how many waves will crash tomorrow.",
       "next": "empty"
     },
     "empty": {
       "speaker": "",
       "text": "",
-      "event": "add_state",
+      "event": "show_meteor",
       "next": null
     }
   }

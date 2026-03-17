@@ -64,7 +64,7 @@
     "10.2": {
       "speaker": "Crab",
       "text": "I've been here for so long and am insignificant.",
-        "choices": [
+      "choices": [
         {
           "text": "The dinosaurs were only here briefly, but to them, their ruling was for their own eternity.",
           "next": "10.3"

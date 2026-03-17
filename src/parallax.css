@@ -1,3 +1,9 @@
+.hidden {
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+}
+
 img {
   image-rendering: pixelated; /* For images scaled up, preserves pixels */
   /* OR */
