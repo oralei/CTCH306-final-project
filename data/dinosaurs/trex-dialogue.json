@@ -94,6 +94,7 @@
     "empty": {
       "speaker": "",
       "text": "",
+      "event": "add_state",
       "next": null
     }
   }

@@ -43,12 +43,11 @@ function showNode(nodeKey) {
   speakerEl.textContent = node.speaker || '';
   // Speaker color
   const speakerColors = {
-    'Crab': '#520730',
+    'Crab': '#9c160c',
     'You':  '#09386e',
   };
-  const color = speakerColors[node.speaker] || '#ffffff';
-  speakerEl.style.color = color;
-  textEl.style.color    = color;
+  const colorS = speakerColors[node.speaker] || '#ffffff';
+  speakerEl.style.color = colorS;
 
   // Animate text in
   textEl.className = 'text-animate';

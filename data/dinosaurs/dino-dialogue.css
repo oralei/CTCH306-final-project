@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --bg: #e4ddbf;
+  --surface: #f3efeb;
+  --border: #100929;
+  --text: #100929;
+  --text-dim: #100929;
+  --accent: #100929;
+  --accent-dim: #100929;
+  --speaker-color: #100929;
+}
+
+#speaker {
+  font-family: "Bungee", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+#dialogue-text {
+  font-family: "Roboto Slab";
+  font-size: 1.2rem;
+}
+
+#choices button {
+  font-family: "Roboto Slab";
+  font-size: 1.05rem;
+}
+
+#choices button:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: #d5e2e6;
+}
+
+#continue-hint {
+  font-family: "Bungee", sans-serif;
+  font-size: 0.8rem;
+}
+
+.next-button {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.test-title {
+  font-family: "Bungee", sans-serif;
+  font-size: 2.3rem;
+}

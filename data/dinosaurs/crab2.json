@@ -1,31 +1,22 @@
 {
-  "start": "d_1",
+  "start": "1",
   "nodes": {
-    "d_1": {
+    "1": {
       "speaker": "You",
-      "text": "Woah, this place is...",
-        "choices": [
-        {
-          "text": "Strange",
-          "next": "d_2_1"
-        },
-        {
-          "text": "Awesome",
-          "next": "d_2_2"
-        }
-      ]
+      "text": "Is that what I think it is?",
+      "next": "2"
     },
-    "d_2_1": {
+    "2": {
       "speaker": "Crab",
-      "text": "It's from a really long time ago I think.",
-      "next": "d_3"
+      "text": "Oh, that's the big hot glowy thing.",
+      "next": "3"
     },
-    "d_2_2": {
-      "speaker": "Crab",
+    "3": {
+      "speaker": "You",
       "text": "You like it? It was quite scary at this time.",
-      "next": "d_3"
+      "next": "4"
     },
-    "d_3": {
+    "4": {
       "speaker": "Crab",
       "text": "It was quite noisy.",
       "next": "empty"
@@ -33,6 +24,7 @@
     "empty": {
       "speaker": "",
       "text": "",
+      "event": "add_state",
       "next": null
     }
   }
