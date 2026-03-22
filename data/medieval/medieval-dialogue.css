@@ -14,7 +14,8 @@
 
 #dialogue-box {
   top: 2rem;
-  max-height: 200px;
+  bottom: auto;
+  max-height: none;
   border: 2px solid var(--border);
   border-radius: 3px;
 }

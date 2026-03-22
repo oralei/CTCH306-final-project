@@ -5,14 +5,21 @@ SceneManager.init('medieval')
 var sceneState = 0;
 console.log(sceneState);
 
+// ----- Sounds ----
+var warSound = new Audio('/data/medieval/audio/war-sounds.mp3');
+warSound.volume = 0.5;
+
+var churchSound = new Audio('/data/medieval/audio/bell.mp3');
+churchSound.volume = 0.5;
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
     loadDialogue('/data/medieval/crab1.json');
   }
-  else if (sceneState == 2){
-    loadDialogue('/data/medieval/crab2.json');
+  else if (sceneState == 3){
+    loadDialogue('/src/look-around.json');
+    console.log("You need to progress! Scene State: " + sceneState);
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -20,9 +27,10 @@ document.getElementById('crab').addEventListener('click', () => {
   }
 });
 
-// TREX OBJECT
+// WAR OBJECT
 document.getElementById('war').addEventListener('click', () => {
   if (sceneState == 1){
+    warSound.play();
     loadDialogue('/data/medieval/war.json');
   }
   else{
@@ -31,9 +39,22 @@ document.getElementById('war').addEventListener('click', () => {
   }
 });
 
+// CHURCH OBJECT
+document.getElementById('church').addEventListener('click', () => {
+  if (sceneState == 2){
+    churchSound.play();
+    loadDialogue('/data/medieval/church.json');
+  }
+  else{
+    loadDialogue('/src/look-around.json');
+    console.log("You need to progress! Scene State: " + sceneState);
+  }
+});
+
+/* DEBUG BUTTON
 document.getElementById('nextSceneBtn').addEventListener('click', () => {
   SceneManager.next();
-});
+}); */
 
 function triggerEvent(eventName) {
   switch(eventName) {
@@ -41,11 +62,8 @@ function triggerEvent(eventName) {
       sceneState++;
       console.log(sceneState);
       break;
-    case "show_meteor":
+    case "war-sounds":
       ShowMeteor()
-      break;
-    case "meteor_crash":
-      MeteorCrash();
       break;
   }
 }

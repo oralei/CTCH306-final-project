@@ -79,6 +79,7 @@ function showNode(nodeKey) {
     });
 
   } else if (node.next) {
+    nextSFX.currentTime = 0;
     nextSFX.play();
     // Linear: click box to advance
     box.classList.add('clickable');

@@ -1,0 +1,61 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "Crab",
+      "text": "So much fighting...",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "Crab",
+      "text": "And for what?",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "Crab",
+      "text": "It seems so meaningless. Taking one or another's life. As if it is nothing",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "You",
+      "text": "Yes. War is strange. But just like you, it never changes.",
+      "next": "5"
+    },
+    "5": {
+      "speaker": "You",
+      "text": "Well, to me, this looks like the Renaissance.",
+      "next": "6"
+    },
+    "6": {
+      "speaker": "Crab",
+      "text": "The what?",
+      "next": "7"
+    },
+    "7": {
+      "speaker": "You",
+      "text": "Resnaissance? French for 'rebirth'.",
+      "next": "7.1"
+    },
+    "7.1": {
+      "speaker": "Crab",
+      "text": "I see. Humans love to put titles on things. Even things without form",
+      "next": "8"
+    },
+    "8": {
+      "speaker": "Crab",
+      "text": "Take a look around, tell me what you see.",
+      "next": "9"
+    },
+    "9": {
+      "speaker": "Crab",
+      "text": "I'm curious to know what could be so special about this place.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "event": "add_state",
+      "next": null
+    }
+  }
+}
