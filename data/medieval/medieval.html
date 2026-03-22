@@ -26,7 +26,7 @@
     <img class="parallax-item" data-depth="0.14" data-tilt="0.11" id='church' src="/data/medieval/media/church.png">
 
     <div class="parallax-item parallax-full ground2" data-depth="0.13" data-tilt="0.1"></div>
-    <div class="parallax-item parallax-full ground1" data-depth="0.155" data-tilt="0.1"></div>
+    <div class="parallax-item parallax-full ground1" data-depth="0.22" data-tilt="0.2"></div>
 
     <!-- CRAB ! -->
     <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/dinosaurs/media/crabMain.png">
@@ -36,8 +36,9 @@
     
     <div class="parallax-item parallax-full trees" data-depth="0.34" data-tilt="0.22"></div>
 
+    <!-- DEBUG NEXT BUTTONS --> <!--
     <div class="parallax-item test-title">TIS BUT A SCRATCH</div>
-    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button>
+    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button> -->
 
     <!-- Vignette, Godrays-->
     <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
@@ -48,12 +49,17 @@
     <div id="dialogue-text"></div>
     <div id="choices"></div>
     <div id="continue-hint">click to continue</div>
+  
   </div>
 
   <!-- Audio -->
-  <audio id="wind" controls autoplay loop style="display:none">
-    <source src="/data/coastline/audio/wind.mp3" type="audio/mp3">
+  <audio id="wind" autoplay loop style="display:none">
+    <source src="/data/medieval/audio/fantasy_music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
+  </audio>
+
+  <audio id="next-sound" style="display:none">
+    <source src="/data/medieval/audio/page-flip.mp3" type="audio/mp3">
   </audio>
 
 </body>
@@ -61,13 +67,12 @@
 <script src="/src/sceneManager.js"></script>
 <script src="/src/dialogue.js"></script>
 <script src="/src/parallax.js"></script>
-<script src="/data/dinosaurs/dinosaurs.js"></script>
+<script src="/data/medieval/medieval.js"></script>
 <script>
   var audio = document.getElementById("wind");
-  audio.volume = 0.0; // Made silent for now
+  audio.volume = 0.3; // Made silent for now
 </script>
   <script>
-    SceneManager.init('medieval')
     document.getElementById('nextSceneBtn').addEventListener('click', () => {
       SceneManager.next();
     });

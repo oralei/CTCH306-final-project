@@ -59,5 +59,6 @@ img {
 .trees {
   width: 105vw;
   height: 105vh; 
+  top: -3vh;
   background-image: url('../medieval/media/treesForeground.png');
 }

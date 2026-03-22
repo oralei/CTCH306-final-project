@@ -8,6 +8,9 @@ const speakerEl = document.getElementById('speaker');
 const textEl    = document.getElementById('dialogue-text');
 const choicesEl = document.getElementById('choices');
 const hintEl    = document.getElementById('continue-hint');
+const nextSFX   = document.getElementById('next-sound');
+
+nextSFX.volume = 0.2; // Made silent for now
 
 let dialogueData;
 
@@ -76,6 +79,7 @@ function showNode(nodeKey) {
     });
 
   } else if (node.next) {
+    nextSFX.play();
     // Linear: click box to advance
     box.classList.add('clickable');
     textEl.classList.add('done');
