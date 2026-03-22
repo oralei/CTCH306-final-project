@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/src/parallax.css"/>
   <!-- ERA SPECIFIC CSS -->
   <link rel="stylesheet" href="/data/medieval/medieval.css" />
+  <link rel="stylesheet" href="/data/medieval/medieval-dialogue.css" />
 </head>
 
 <body>
@@ -19,16 +20,21 @@
   <div id="scene-container">
     <!-- The lower the line, the more in front the image is (higher depth value) -->
     <div class="parallax-item parallax-full bg" data-depth="0.1" data-tilt="0.08"></div>
-    <div class="parallax-item parallax-full clouds" data-depth="0.14" data-tilt="0.1"></div>
+
+    <div class="parallax-item parallax-full castle" data-depth="0.1" data-tilt="0.1"></div>
+    <!-- CHURCH ! -->
+    <img class="parallax-item" data-depth="0.14" data-tilt="0.11" id='church' src="/data/medieval/media/church.png">
+
+    <div class="parallax-item parallax-full ground2" data-depth="0.13" data-tilt="0.1"></div>
+    <div class="parallax-item parallax-full ground1" data-depth="0.155" data-tilt="0.1"></div>
 
     <!-- CRAB ! -->
     <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/dinosaurs/media/crabMain.png">
 
     <!-- WAR ! -->
-    <img class="parallax-item" data-depth="0.4" data-tilt="0.2" id='war' src="/data/medieval/media/war.png">
-
-    <!-- CHURCH ! -->
-    <img class="parallax-item" data-depth="0.4" data-tilt="0.2" id='church' src="/data/medieval/media/church.png">
+    <img class="parallax-item" data-depth="0.22" data-tilt="0.22" id='war' src="/data/medieval/media/war.png">
+    
+    <div class="parallax-item parallax-full trees" data-depth="0.34" data-tilt="0.22"></div>
 
     <div class="parallax-item test-title">TIS BUT A SCRATCH</div>
     <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button>
