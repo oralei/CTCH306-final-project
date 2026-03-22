@@ -1,0 +1,51 @@
+img {
+  image-rendering: auto; /* For images scaled up, preserves pixels */
+  /* OR */
+  image-rendering: optimizeQuality; /* Tries to preserve contrast and sharp edges */
+}
+
+#crab {
+  position: absolute;
+  width: 256px;
+  height: 172px;
+  left: 1%;
+  bottom: 10%;
+  scale: 1.3;
+  border: none;
+  cursor: pointer;
+}
+
+#war {
+  position: absolute;
+  width: 600;
+  height: 452px;
+  left: 30%;
+  bottom: 10%;
+  scale: 1.3;
+  border: none;
+  cursor: pointer;
+}
+
+#church {
+  position: absolute;
+  width: 960;
+  height: 728px;
+  left: 30%;
+  bottom: 10%;
+  scale: 1.3;
+  border: none;
+  cursor: pointer;
+}
+
+.parallax-full {
+  position: absolute;
+  left: -2vw;
+  top: -2vh;
+  width: 103vw;
+  height: 103vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg { background-image: url('../medieval/media/sky.png');}

@@ -5,25 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - medieval</title>
   <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css" />
-  <link rel="stylesheet" href="/src/parallax.css" />
+  <link rel="stylesheet" href="/src/dialogue.css"/>
+  <link rel="stylesheet" href="/src/parallax.css"/>
+  <!-- ERA SPECIFIC CSS -->
+  <link rel="stylesheet" href="/data/medieval/medieval.css" />
 </head>
+
 <body>
-  <h1>TIS BUT A SCRATCH</h1>
-  <input type="button" id="nextSceneBtn">
-</body>
   <!-- Instantly makes the page black before anything else loads -->
-  <div id="scene-fade-overlay" style="position: fixed; inset: 0; background: #000; opacity: 1; z-index: 9999; pointer-events: all;"></div>
-  
-  
-  
-  
-  <script src="/src/sceneManager.js"></script>
-  <script src="/src/parallax.js"></script>
+  <div id="scene-fade-overlay"></div>
+
+  <!-- Parallax Elements -->
+  <div id="scene-container">
+    <!-- The lower the line, the more in front the image is (higher depth value) -->
+    <div class="parallax-item parallax-full bg" data-depth="0.1" data-tilt="0.08"></div>
+    <div class="parallax-item parallax-full clouds" data-depth="0.14" data-tilt="0.1"></div>
+
+    <!-- CRAB ! -->
+    <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/dinosaurs/media/crabMain.png">
+
+    <!-- WAR ! -->
+    <img class="parallax-item" data-depth="0.4" data-tilt="0.2" id='war' src="/data/medieval/media/war.png">
+
+    <!-- CHURCH ! -->
+    <img class="parallax-item" data-depth="0.4" data-tilt="0.2" id='church' src="/data/medieval/media/church.png">
+
+    <div class="parallax-item test-title">TIS BUT A SCRATCH</div>
+    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button>
+
+    <!-- Vignette, Godrays-->
+    <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
+  </div>
+
+  <div id="dialogue-box">
+    <div id="speaker"></div>
+    <div id="dialogue-text"></div>
+    <div id="choices"></div>
+    <div id="continue-hint">click to continue</div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="wind" controls autoplay loop style="display:none">
+    <source src="/data/coastline/audio/wind.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+
+<script src="/src/sceneManager.js"></script>
+<script src="/src/dialogue.js"></script>
+<script src="/src/parallax.js"></script>
+<script src="/data/dinosaurs/dinosaurs.js"></script>
+<script>
+  var audio = document.getElementById("wind");
+  audio.volume = 0.0; // Made silent for now
+</script>
   <script>
     SceneManager.init('medieval')
     document.getElementById('nextSceneBtn').addEventListener('click', () => {
       SceneManager.next();
     });
   </script>
+
 </html>
