@@ -35,12 +35,15 @@
 #choices button {
   font-family: "Grenze Gotisch", serif;
   font-size: 1.1rem;
+  border-radius: 3px;
+  border: 2px solid #5c3d387a;
 }
 
 #choices button:hover {
   border-color: var(--accent);
   color: var(--text);
   background: #e4d4c5;
+  border: 2px solid #3f3331a8;
 }
 
 #continue-hint {

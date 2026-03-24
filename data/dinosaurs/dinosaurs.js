@@ -8,10 +8,10 @@ console.log(sceneState);
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
-    loadDialogue('/data/dinosaurs/crab1.json');
+    loadDialogue('/data/dinosaurs/dino-crab1.json');
   }
   else if (sceneState == 2){
-    loadDialogue('/data/dinosaurs/crab2.json');
+    loadDialogue('/data/dinosaurs/dino-crab2.json');
   }
   else{
     loadDialogue('/src/look-around.json');

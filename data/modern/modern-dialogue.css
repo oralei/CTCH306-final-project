@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+:root {
+  --bg: #2d2e3173;
+  --surface: #0000006c;
+  --border: #ffffff42;
+  --text: #ffffff;
+  --text-dim: #ffffff;
+  --accent: #ffffff;
+  --accent-dim: #ffffff;
+  --speaker-color: #ffffff;
+}
+
+#dialogue-box {
+  top: 2rem;
+  bottom: auto;
+  max-height: none;
+  border: 2.5px solid var(--border);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0 6mm 6mm #0000003b);
+}
+
+#speaker {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: none;
+  color: white;
+}
+
+#dialogue-text {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.2rem;
+}
+
+#choices button {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #a7a7a75b;
+}
+
+#choices button:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: #ffffff28;
+  border: 2px solid #a7a7a7d2;
+}
+
+#continue-hint {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.next-button {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 900;
+  font-size: 0.6rem;
+}
+
+.test-title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.3rem;
+}
+

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
@@ -13,40 +13,40 @@
 }
 
 #speaker {
-  font-family: "Chelsea Market", sans-serif;
-  font-size: 1.45rem;
-  font-weight: 500;
+  font-family: "Rubik Dirt", system-ui;
+  font-size: 1.2rem;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 #dialogue-text {
   font-family: "Roboto Slab";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #choices button {
   font-family: "Roboto Slab";
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 #choices button:hover {
   border-color: var(--accent);
   color: var(--text);
-  background: #d5e2e6;
+  background: #dde9da;
 }
 
 #continue-hint {
-  font-family: "Chelsea Market", sans-serif;
+  font-family: "Rubik Dirt", system-ui;
   font-size: 0.8rem;
 }
 
 .next-button {
   font-family: "Roboto Slab";
-  font-weight: 900;
+  font-weight: 100;
   font-size: 1rem;
 }
 
 .test-title {
-  font-family: "Chelsea Market", sans-serif;
+  font-family: "Rubik Dirt", system-ui;
   font-size: 2.3rem;
 }

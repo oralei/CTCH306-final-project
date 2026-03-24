@@ -5,22 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - modern</title>
   <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css" />
-  <link rel="stylesheet" href="/src/parallax.css" />
+  <link rel="stylesheet" href="/src/dialogue.css"/>
+  <link rel="stylesheet" href="/src/parallax.css"/>
+  <!-- ERA SPECIFIC CSS -->
+  <link rel="stylesheet" href="/data/medieval/medieval.css" />
+  <link rel="stylesheet" href="/data/modern/modern-dialogue.css" />
 </head>
+
 <body>
-  <h1>ELECTRICITY!!!</h1>
-  <input type="button" id="nextSceneBtn">
-</body>
   <!-- Instantly makes the page black before anything else loads -->
   <div id="scene-fade-overlay"></div>
+
+  <!-- Parallax Elements -->
+  <div id="scene-container">
+    <!-- The lower the line, the more in front the image is (higher depth value) -->
+    <div class="parallax-item parallax-full bg" data-depth="0.1" data-tilt="0.08"></div>
+
+    <div class="parallax-item parallax-full castle" data-depth="0.1" data-tilt="0.1"></div>
+    <!-- CHURCH ! -->
+    <img class="parallax-item" data-depth="0.14" data-tilt="0.11" id='church' src="/data/medieval/media/church.png">
+
+    <div class="parallax-item parallax-full ground2" data-depth="0.13" data-tilt="0.1"></div>
+    <div class="parallax-item parallax-full ground1" data-depth="0.22" data-tilt="0.2"></div>
+
+    <!-- CRAB ! -->
+    <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/medieval/media/crab-med.png">
+
+    <!-- WAR ! -->
+    <img class="parallax-item" data-depth="0.22" data-tilt="0.22" id='war' src="/data/medieval/media/war.png">
+    
+    <div class="parallax-item parallax-full trees" data-depth="0.34" data-tilt="0.22"></div>
+
+    <!-- DEBUG NEXT BUTTONS --> <!--
+    <div class="parallax-item test-title">TIS BUT A SCRATCH</div>
+    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button> -->
+
+    <!-- Vignette, Godrays-->
+    <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
+  </div>
+
+  <div class="noselect" id="dialogue-box">
+    <div class="noselect" id="speaker"></div>
+    <div class="noselect" id="dialogue-text"></div>
+    <div class="noselect" id="choices"></div>
+    <div class="noselect" id="continue-hint">Click to continue</div>
   
-  <script src="/src/sceneManager.js"></script>
-  <script src="/src/parallax.js"></script>
-  <script>
-    SceneManager.init('modern')
-    document.getElementById('nextSceneBtn').addEventListener('click', () => {
-      SceneManager.next();
-    });
-  </script>
+  </div>
+
+  <!-- Audio -->
+  <audio id="wind" autoplay loop style="display:none">
+    <source src="/data/medieval/audio/fantasy_music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="next-sound" style="display:none">
+    <source src="/data/medieval/audio/page-flip.mp3" type="audio/mp3">
+  </audio>
+
+</body>
+
+<script src="/src/sceneManager.js"></script>
+<script src="/src/dialogue.js"></script>
+<script src="/src/parallax.js"></script>
+<script src="/data/modern/modern.js"></script>
+<script>
+  var audio = document.getElementById("wind");
+  audio.volume = 0; // Made silent for now
+</script>
 </html>

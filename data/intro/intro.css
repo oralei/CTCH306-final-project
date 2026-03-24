@@ -82,3 +82,12 @@
   from {top: 10%;}
   to {top: 12%;}
 }
+
+#dialogue-box {
+  border: 2px solid var(--border);
+  border-radius: 5px;
+}
+
+#choices button {
+  border-radius: 5px;
+}

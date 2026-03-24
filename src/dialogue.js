@@ -29,6 +29,12 @@ function applyVariables(text) {
   });
 }
 
+// Speaker color
+const speakerColors = {
+  'Crab': '#9c160c',
+  'You':  '#09386e',
+};
+
 function showNode(nodeKey) {
   showDialogueBox();
 
@@ -44,11 +50,7 @@ function showNode(nodeKey) {
 
   // Speaker
   speakerEl.textContent = node.speaker || '';
-  // Speaker color
-  const speakerColors = {
-    'Crab': '#9c160c',
-    'You':  '#09386e',
-  };
+
   const colorS = speakerColors[node.speaker] || '#000000';
   speakerEl.style.color = colorS;
 
