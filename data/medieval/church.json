@@ -8,7 +8,7 @@
     },
     "2": {
       "speaker": "Crab",
-      "text": "Always ringing day by day.",
+      "text": "Always ringing from over there.",
       "next": "3"
     },
     "3": {
@@ -22,48 +22,137 @@
         "choices": [
         {
           "text": "People pray.",
-          "next": "5"
+          "next": "4_1"
         },
         {
           "text": "People speak what they believe is true.",
-          "next": "5"
+          "next": "4_2"
         }
       ]
     },
+    "4_1": {
+      "speaker": "Crab",
+      "text": "Words spoken that go to no-one...",
+      "next": "5"
+    },
+    "4_2": {
+      "speaker": "Crab",
+      "text": "To speak what you believe, as if saying it makes it more real.",
+      "next": "5"
+    },
     "5": {
-      "speaker": "You",
-      "text": "Well, to me, this looks like the Renaissance.",
+      "speaker": "Crab",
+      "text": "Always strange things going on in their minds. I never quite understood it.",
       "next": "6"
     },
     "6": {
       "speaker": "Crab",
-      "text": "The what?",
+      "text": "The truth seems to be something that your people always strive to find out.",
       "next": "7"
     },
     "7": {
       "speaker": "You",
-      "text": "Resnaissance? French for 'rebirth'.",
+      "text": "Maybe it's because there's lot of things that aren't the real truth.",
       "next": "7.1"
     },
     "7.1": {
-      "speaker": "Crab",
-      "text": "I see. Humans love to put titles on things. Even things without form",
+      "speaker": "You",
+      "text": "They say history is written by the victors.",
       "next": "8"
     },
     "8": {
       "speaker": "Crab",
-      "text": "Take a look around, tell me what you see.",
+      "text": "Like the people that fight in that battle? Only those who survive get to tell their truths?",
       "next": "9"
     },
     "9": {
+      "speaker": "You",
+      "text": "Exactly.",
+      "next": "10"
+    },
+    "10": {
       "speaker": "Crab",
-      "text": "I'm curious to know what could be so special about this place.",
+      "text": "What about those who've fallen? Are they forgotten? Are their stories untold?",
+      "next": "11"
+    },
+    "11": {
+      "speaker": "You",
+      "text": "More often than not.",
+      "next": "12"
+    },
+    "12": {
+      "speaker": "Crab",
+      "text": "And in that... 'church.' They are the victors too? What makes them different?",
+      "next": "13"
+    },
+    "13": {
+      "speaker": "You",
+      "text": "You could say that...",
+        "choices": [
+        {
+          "text": "Everyone leaves something behind.",
+          "next": "13_1_1"
+        },
+        {
+          "text": "Prayers aren't always heard by everyone.",
+          "next": "13_2_1"
+        }
+      ]
+    },
+    "13_1_1": {
+      "speaker": "You",
+      "text": "But written records aren't the only proof of existence.",
+      "next": "13_1_2"
+    },
+    "13_1_2": {
+      "speaker": "You",
+      "text": "Everything leaves a drag path. Whether it's faintly on dirt or etched in stone.",
+      "next": "14"
+    },
+    "13_2_1": {
+      "speaker": "You",
+      "text": "Prayers aren't always heard by everyone.",
+      "next": "13_2_2"
+    },
+    "13_2_2": {
+      "speaker": "You",
+      "text": "Sometimes they aren't even spoken out loud.",
+      "next": "13_2_3"
+    },
+    "13_2_3": {
+      "speaker": "You",
+      "text": "But they still are meaningful to those who do it.",
+      "next": "14"
+    },
+    "14": {
+      "speaker": "You",
+      "text": "A life doesn't need to be recorded to be lived.",
+      "next": "15"
+    },
+    "15": {
+      "speaker": "Crab",
+      "text": "...",
+      "next": "16"
+    },
+    "16": {
+      "speaker": "Crab",
+      "text": "I see.",
+      "next": "17"
+    },
+    "17": {
+      "speaker": "Crab",
+      "text": "That is an intriguing perspective.",
+      "next": "18"
+    },
+    "18": {
+      "speaker": "Crab",
+      "text": "Let's keep going. I'd like to know more of your thoughts.",
       "next": "empty"
     },
     "empty": {
       "speaker": "",
       "text": "",
-      "event": "add_state",
+      "event": "change_scene",
       "next": null
     }
   }

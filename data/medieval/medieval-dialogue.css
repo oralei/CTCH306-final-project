@@ -22,7 +22,7 @@
 
 #speaker {
   font-family: "Pirata One", system-ui;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -34,18 +34,18 @@
 
 #choices button {
   font-family: "Grenze Gotisch", serif;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 #choices button:hover {
   border-color: var(--accent);
   color: var(--text);
-  background: #d5e2e6;
+  background: #e4d4c5;
 }
 
 #continue-hint {
   font-family: "Pirata One", system-ui;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .next-button {

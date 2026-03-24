@@ -18,37 +18,33 @@
     },
     "4": {
       "speaker": "You",
-      "text": "Yes. War is strange. But just like you, it never changes.",
+      "text": "Yes. War is strange, it's one thing that never changes.",
       "next": "5"
     },
     "5": {
       "speaker": "You",
-      "text": "Well, to me, this looks like the Renaissance.",
+      "text": "But it's one of those things that helped people find meaning.",
       "next": "6"
     },
     "6": {
       "speaker": "Crab",
-      "text": "The what?",
+      "text": "There must be better ways to find meaning.",
       "next": "7"
     },
     "7": {
       "speaker": "You",
-      "text": "Resnaissance? French for 'rebirth'.",
-      "next": "7.1"
-    },
-    "7.1": {
-      "speaker": "Crab",
-      "text": "I see. Humans love to put titles on things. Even things without form",
+      "text": "You're right...",
       "next": "8"
     },
     "8": {
-      "speaker": "Crab",
-      "text": "Take a look around, tell me what you see.",
+      "speaker": "You",
+      "text": "When the world feels that meaningless people start looking for something higher.",
       "next": "9"
     },
     "9": {
-      "speaker": "Crab",
-      "text": "I'm curious to know what could be so special about this place.",
+      "speaker": "",
+      "text": "*Bell rings*",
+      "event": "bell",
       "next": "empty"
     },
     "empty": {

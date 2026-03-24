@@ -7,9 +7,9 @@ img {
 #crab {
   position: absolute;
   width: 256px;
-  height: 172px;
-  left: 60%;
-  bottom: 10%;
+  height: 202px;
+  left: 65%;
+  bottom: 7%;
   scale: 1.3;
   border: none;
   cursor: pointer;

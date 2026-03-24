@@ -42,6 +42,7 @@ document.getElementById('war').addEventListener('click', () => {
 // CHURCH OBJECT
 document.getElementById('church').addEventListener('click', () => {
   if (sceneState == 2){
+    churchSound.currentTime = 0;
     churchSound.play();
     loadDialogue('/data/medieval/church.json');
   }
@@ -62,8 +63,11 @@ function triggerEvent(eventName) {
       sceneState++;
       console.log(sceneState);
       break;
-    case "war-sounds":
-      ShowMeteor()
+    case "bell":
+      churchSound.play();
+      break;
+    case "change_scene":
+      SceneManager.next();
       break;
   }
 }
