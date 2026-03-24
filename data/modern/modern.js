@@ -5,8 +5,8 @@ SceneManager.init('modern')
 var sceneState = 0;
 console.log(sceneState);
 
-speakerColors['Crab'] = 'rgb(255, 236, 236)';
-speakerColors['You']  = 'rgb(255, 255, 255)';
+speakerColors['Crab'] = '#ffffff';
+speakerColors['You']  = '#ffffff';
 // ----- Sounds ----
 var warSound = new Audio('/data/medieval/audio/war-sounds.mp3');
 warSound.volume = 0.5;

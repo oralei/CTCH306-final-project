@@ -5,7 +5,7 @@
   --bg: #2d2e3173;
   --surface: #0000006c;
   --border: #ffffff42;
-  --text: #ffffff;
+  --text: #ffffffc4;
   --text-dim: #ffffff;
   --accent: #ffffff;
   --accent-dim: #ffffff;
@@ -17,7 +17,7 @@
   bottom: auto;
   max-height: none;
   border: 2.5px solid var(--border);
-  border-radius: 8px;
+  border-radius: 12px;
   backdrop-filter: blur(8px);
   filter: drop-shadow(0 6mm 6mm #0000003b);
 }
@@ -38,7 +38,7 @@
 #choices button {
   font-family: "Roboto Flex", sans-serif;
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
   border: 2px solid #a7a7a75b;
 }
 
@@ -52,6 +52,7 @@
 #continue-hint {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 0.9rem;
+  color: #d6d6d675
 }
 
 .next-button {
