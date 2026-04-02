@@ -7,7 +7,7 @@ console.log(sceneState);
 
 speakerColors['Crab'] = '#ffffff';
 speakerColors['You']  = '#ffffff';
-// ----- Sounds ----
+// ----- Sounds -----
 var warSound = new Audio('/data/medieval/audio/war-sounds.mp3');
 warSound.volume = 0.5;
 
@@ -51,6 +51,33 @@ document.getElementById('factory').addEventListener('click', () => {
   else{
     loadDialogue('/src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
+  }
+});
+
+// ------- Phone OBJECT ----------
+var phoneUp = false;
+var hasWIFI = false;
+const phone = document.getElementById('phone-main')
+
+phone.addEventListener('click', () => {
+  if (phoneUp == false)
+  {
+    if (hasWIFI == false)
+    {
+      phone.classList.add("phone-no-wifi");
+    }
+    phone.classList.add("phone-up");
+    phoneUp = true;
+  }
+  else
+  {
+    if (hasWIFI == false)
+    {
+      loadDialogue('/data/modern/needWIFI.json');
+      phone.classList.remove("phone-no-wifi");
+    }
+    phone.classList.remove("phone-up")
+    phoneUp = false;
   }
 });
 

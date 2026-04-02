@@ -38,7 +38,13 @@
     <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
   </div>
 
+  <div class="parallax-item phone" id="phone-main" data-depth="0.2" data-tilt="0.1"></div>
+
   <div class="noselect" id="dialogue-box">
+    <div class="noselect" id="app-name"> 
+      <img class="text-icon" src="/data/modern/media/textMsg.png">
+      Messages App
+    </div>
     <div class="noselect" id="speaker"></div>
     <div class="noselect" id="dialogue-text"></div>
     <div class="noselect" id="choices"></div>
@@ -47,13 +53,13 @@
   </div>
 
   <!-- Audio -->
-  <audio id="wind" autoplay loop style="display:none">
-    <source src="/data/medieval/audio/fantasy_music.mp3" type="audio/mp3">
+  <audio id="street" autoplay loop style="display:none">
+    <source src="/data/modern/audio/street.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
   <audio id="next-sound" style="display:none">
-    <source src="/data/medieval/audio/page-flip.mp3" type="audio/mp3">
+    <source src="/data/modern/audio/text-type.mp3" type="audio/mp3">
   </audio>
 
 </body>
@@ -63,7 +69,7 @@
 <script src="/src/parallax.js"></script>
 <script src="/data/modern/modern.js"></script>
 <script>
-  var audio = document.getElementById("wind");
-  audio.volume = 0; // Made silent for now
+  var audio = document.getElementById("street");
+  audio.volume = 0.2; // Made silent for now
 </script>
 </html>

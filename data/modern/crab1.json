@@ -1,0 +1,31 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "You",
+      "text": "Now what are we doing here?",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "Crab",
+      "text": "Look familiar?",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "You",
+      "text": "In a way.",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "Crab",
+      "text": "Well, look around. By the look on your face there's lots you see that I'm missing.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "event": "add_state",
+      "next": null
+    }
+  }
+}

@@ -28,6 +28,8 @@
   font-weight: 500;
   text-transform: none;
   color: white;
+  letter-spacing: 0.05em;
+  margin-bottom: 0rem;
 }
 
 #dialogue-text {
@@ -66,3 +68,14 @@
   font-size: 2.3rem;
 }
 
+.text-icon {
+  max-width: 22px;
+  image-rendering: smooth;
+}
+
+#app-name {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 6px;
+}

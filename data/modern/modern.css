@@ -76,3 +76,37 @@ img {
   top: -3vh;
   background-image: url('../medieval/media/treesForeground.png');
 }
+
+
+/* --------------- PHONE STUFF ---------------- */
+
+.phone {
+  position: absolute;
+  width: 512px;
+  height: 1017px;
+  left: 5%;
+  bottom: -70%;
+  scale: 0.6;
+  border: none;
+  cursor: pointer;
+  background-image: url('../modern/media/iphoneOff.png');
+}
+
+.phone:hover {
+  scale: 0.62;
+  bottom: -65%;
+}
+
+.phone-up {
+  scale: 0.62;
+  bottom: -15%;
+}
+
+.phone-no-wifi {
+  background-image: url('../modern/media/iphoneNoWIFI.png');
+}
+
+.phone-up:hover {
+  scale: 0.64;
+  bottom: -15%;
+}

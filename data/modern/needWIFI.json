@@ -1,0 +1,15 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "You",
+      "text": "Looks like I'll need to connect to wifi somehow first.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}
