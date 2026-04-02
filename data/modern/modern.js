@@ -29,8 +29,8 @@ document.getElementById('crab').addEventListener('click', () => {
   }
 });
 
-// WAR OBJECT
-document.getElementById('war').addEventListener('click', () => {
+// Radio Tower OBJECT
+document.getElementById('radio-tower').addEventListener('click', () => {
   if (sceneState == 1){
     warSound.play();
     loadDialogue('/data/medieval/war.json');
@@ -41,8 +41,8 @@ document.getElementById('war').addEventListener('click', () => {
   }
 });
 
-// CHURCH OBJECT
-document.getElementById('church').addEventListener('click', () => {
+// Factory OBJECT
+document.getElementById('factory').addEventListener('click', () => {
   if (sceneState == 2){
     churchSound.currentTime = 0;
     churchSound.play();
