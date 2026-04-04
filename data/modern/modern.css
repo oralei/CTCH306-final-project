@@ -106,7 +106,56 @@ img {
   background-image: url('../modern/media/iphoneNoWIFI.png');
 }
 
+.phone-on {
+  background-image: url('../modern/media/iphoneOn.png');
+}
+
 .phone-up:hover {
   scale: 0.64;
   bottom: -15%;
+}
+
+.phone-screen {
+  width: 512px;
+  height: 400px;
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 40px 20px; /* more vertical breathing room */
+  box-sizing: border-box;
+
+  justify-items: center;
+
+  transform: translate(0px, -240px);
+}
+
+.app {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 22px;
+  scale: 1;
+  transition: scale ease 0.125s;
+  filter: drop-shadow(0 1mm 4mm #00000046);
+}
+
+.app-empty {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 22px;
+  scale: 1;
+  transition: scale ease 0.125s;
+  filter: drop-shadow(0 1mm 4mm #00000046);
+}
+
+.app:hover {
+  scale: 1.05;
+}
+
+.internet-app {
+  background-image: url('../modern/media/browser.png');
+  background-size: cover;
 }

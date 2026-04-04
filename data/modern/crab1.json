@@ -3,12 +3,41 @@
   "nodes": {
     "1": {
       "speaker": "You",
+      "text": "You look...",
+        "choices": [
+        {
+          "text": "Different",
+          "next": "1_1_1"
+        },
+        {
+          "text": "Nevermind",
+          "next": "1_2"
+        }
+      ]
+    },
+    "1_1_1": {
+      "speaker": "Crab",
+      "text": "Different?",
+      "next": "1_1_2"
+    },
+    "1_1_2": {
+      "speaker": "Crab",
+      "text": "I look the same as I always have.",
+      "next": "1_2"
+    },
+    "1_2": {
+      "speaker": "You",
+      "text": "Just... nevermind.",
+      "next": "1_3"
+    },
+    "1_3": {
+      "speaker": "You",
       "text": "Now what are we doing here?",
       "next": "2"
     },
     "2": {
       "speaker": "Crab",
-      "text": "Look familiar?",
+      "text": "Is this place familiar to you?",
       "next": "3"
     },
     "3": {
@@ -18,7 +47,7 @@
     },
     "4": {
       "speaker": "Crab",
-      "text": "Well, look around. By the look on your face there's lots you see that I'm missing.",
+      "text": "Well, look around. By the look on your face there's lots you see that I myself am missing.",
       "next": "empty"
     },
     "empty": {

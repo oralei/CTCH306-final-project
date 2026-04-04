@@ -17,7 +17,7 @@ churchSound.volume = 0.5;
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
-    loadDialogue('/data/medieval/crab1.json');
+    loadDialogue('/data/modern/crab1.json');
   }
   else if (sceneState == 3){
     loadDialogue('/src/look-around.json');
@@ -32,8 +32,8 @@ document.getElementById('crab').addEventListener('click', () => {
 // Radio Tower OBJECT
 document.getElementById('radio-tower').addEventListener('click', () => {
   if (sceneState == 1){
-    warSound.play();
-    loadDialogue('/data/medieval/war.json');
+    warSound.play(); // change to radio sounds
+    loadDialogue('/data/modern/tower.json');
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -57,7 +57,9 @@ document.getElementById('factory').addEventListener('click', () => {
 // ------- Phone OBJECT ----------
 var phoneUp = false;
 var hasWIFI = false;
-const phone = document.getElementById('phone-main')
+const phone = document.getElementById('phone-main');
+const apps = document.getElementById('screen');
+const internetApp = document.getElementById('internet-app');
 
 phone.addEventListener('click', () => {
   if (phoneUp == false)
@@ -65,9 +67,16 @@ phone.addEventListener('click', () => {
     if (hasWIFI == false)
     {
       phone.classList.add("phone-no-wifi");
+      phone.classList.add("phone-up");
+      phoneUp = true;
     }
-    phone.classList.add("phone-up");
-    phoneUp = true;
+    else // has wifi, phone is on and able to be used
+    {
+      phone.classList.add("phone-on");
+      apps.classList.remove("hidden");
+      phone.classList.add("phone-up");
+      phoneUp = true;
+    }
   }
   else
   {
@@ -75,9 +84,22 @@ phone.addEventListener('click', () => {
     {
       loadDialogue('/data/modern/needWIFI.json');
       phone.classList.remove("phone-no-wifi");
+      phone.classList.remove("phone-up")
+      phoneUp = false;
     }
-    phone.classList.remove("phone-up")
-    phoneUp = false;
+    else // put away phone using button
+    {
+      phone.classList.remove("phone-on");
+      apps.classList.add("hidden");
+      phone.classList.remove("phone-up")
+      phoneUp = false;
+    }
+  }
+});
+
+internetApp.addEventListener('click', () => {
+  if (sceneState == 1){
+    loadDialogue('/data/modern/internet.json');
   }
 });
 
@@ -91,6 +113,9 @@ function triggerEvent(eventName) {
     case "add_state":
       sceneState++;
       console.log(sceneState);
+      break;
+    case "giveWIFI":
+      hasWIFI = true;
       break;
     case "bell":
       churchSound.play();

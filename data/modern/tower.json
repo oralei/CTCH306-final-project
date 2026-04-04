@@ -1,0 +1,21 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "",
+      "text": "*Cellular tower hums*",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "You",
+      "text": "Looks like that did something.",
+      "event": "giveWIFI",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}

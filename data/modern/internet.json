@@ -1,0 +1,94 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "Crab",
+      "text": "What are you doing?",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "You",
+      "text": "Browsing the internet.",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "Crab",
+      "text": "I do not know what that is.",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "You",
+      "text": "It's like a...",
+        "choices": [
+        {
+          "text": "Place to learn",
+          "next": "4_1_1"
+        },
+        {
+          "text": "Place to have fun",
+          "next": "4_2"
+        }
+      ]
+    },
+    "4_1_1": {
+      "speaker": "Crab",
+      "text": "Learn? And what kinds of things can you learn?",
+      "next": "4_1_2"
+    },
+    "4_1_2": {
+      "speaker": "You",
+      "text": "Anything really.",
+      "next": "4_1_3"
+    },
+    "4_1_3": {
+      "speaker": "Crab",
+      "text": "What does this 'internet' say about me?",
+      "next": "4_1_4"
+    },
+    "4_1_4": {
+      "speaker": "You",
+      "text": "Let me search you up and see...",
+      "next": "4_1_5"
+    },
+    "4_1_5": {
+      "speaker": "You",
+      "text": "Oh wow!",
+      "next": "4_1_6"
+    },
+    "4_1_6": {
+      "speaker": "Crab",
+      "text": "What is it?",
+      "next": "4_1_7"
+    },
+    "4_1_7": {
+      "speaker": "You",
+      "text": "Turns out you aren't even a crab or crustacean. You're closer to a spider.",
+      "next": "4_1_8"
+    },
+    "4_1_8": {
+      "speaker": "Crab",
+      "text": "That is... both unsettling and very insightful.",
+      "next": "5"
+    },
+    "4_2": {
+      "speaker": "Crab",
+      "text": "I'm unfamiliar with the word 'fun'.",
+      "next": "4_2_2"
+    },
+    "4_2_2": {
+      "speaker": "Crab",
+      "text": "Am I a fun thing on the internet?",
+      "next": "4_1_4"
+    },
+    "5": {
+      "speaker": "Crab",
+      "text": "So much... innovation. You humans have changed so much over the years.",
+      "next": "6"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}

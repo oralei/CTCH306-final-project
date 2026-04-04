@@ -1,15 +1,13 @@
 img {
-  image-rendering: auto; /* For images scaled up, preserves pixels */
-  /* OR */
-  image-rendering: optimizeQuality; /* Tries to preserve contrast and sharp edges */
+  image-rendering: smooth; /* For images scaled up, preserves pixels */
 }
 
 #crab {
   position: absolute;
   width: 256px;
-  height: 202px;
-  left: 65%;
-  bottom: 7%;
+  height: 350px;
+  left: 62%;
+  bottom: 3%;
   scale: 1.3;
   border: none;
   cursor: pointer;

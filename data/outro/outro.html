@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>things don't change?</title>
-  <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css" />
-  <link rel="stylesheet" href="/src/parallax.css" />
-</head>
-<body>
-  <!-- Instantly makes the page black before anything else loads -->
-  <div id="scene-fade-overlay"></div>
+<html>
+  <head>
+    <title>things don't change</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
+    <link rel="stylesheet" href="/src/dialogue.css" />
+    <link rel="stylesheet" href="/src/parallax.css" />
+    <link rel="stylesheet" href="/data/outro/outro.css" />
+  </head>
+
+  <body>
+    <!-- Instantly makes the page black before anything else loads -->
+    <div id="scene-fade-overlay"></div>
+    <!-- Parallax Elements -->
+    <div id="scene-container">
+      <!-- The lower the line, the more in front the image is (higher depth value) -->
+      <div class="parallax-item parallax-full bg" id="sky-bg" data-depth="0.1" data-tilt="0.08"></div>
+      <div class="parallax-item parallax-full far-trees" data-depth="0.14" data-tilt="0.1"></div>
+      <div class="parallax-item parallax-full back-hills" data-depth="0.15" data-tilt="0.1"></div>
+      <div class="parallax-item parallax-full beach" data-depth="0.2" data-tilt="0.09"></div>
+      <div class="parallax-item parallax-full ocean" data-depth="0.24" data-tilt="0.12"></div>
+      <div class="parallax-item parallax-full" id="far-rocks" data-depth="0.19" data-tilt="0.12"></div>
+      <div class="parallax-item parallax-full" id="mid-rocks" data-depth="0.2" data-tilt="0.15"></div>
+      <div class="parallax-item parallax-full" id="front-hill" data-depth="0.24" data-tilt="0.24"></div>
+      <div class="parallax-item parallax-full" id="close-rocks" data-depth="0.24" data-tilt="0.3"></div>
+
+      <!-- CRAB ! -->
+      <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/coastline/media/testCrab.png">
+
+    </div>
+
+  <div class="noselect" id="dialogue-box">
+    <div class="noselect" id="speaker"></div>
+    <div class="noselect" id="dialogue-text"></div>
+    <div class="noselect" id="choices"></div>
+    <div class="noselect" id="continue-hint">click to continue</div>
+  </div>
+
+    <!-- Audio -->
+    <audio id="wind" autoplay loop style="display:none">
+      <source src="/data/coastline/audio/wind.mp3" type="audio/mp3">
+    </audio>
+    <audio id="next-sound" style="display:none">
+      <source src="/data/medieval/audio/page-flip.mp3" type="audio/mp3">
+    </audio>
 
   <h1>goodbye...</h1>
-</body>
+</body>  
+  <script src="/src/outro.js"></script>
+  <script src="/src/dialogue.js"></script>
   <script src="/src/sceneManager.js"></script>
   <script src="/src/parallax.js"></script>
   <script>SceneManager.init('outro')</script>
+  <script>
+    var audio = document.getElementById("wind");
+    audio.volume = 0.1; // Made silent for now
+  </script>
 </html>

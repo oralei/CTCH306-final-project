@@ -1,0 +1,9 @@
+#dialogue-box {
+  top: 2rem;
+  bottom: auto;
+  max-height: none;
+  border: 2.5px solid var(--border);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0 6mm 6mm #0000003b);
+}

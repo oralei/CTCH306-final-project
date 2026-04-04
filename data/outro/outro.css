@@ -1,0 +1,93 @@
+.bg {
+    background-image: url('../coastline/media/coastSky.png');
+}
+
+.beach {
+    background-image: url('../coastline/media/coastBeach2.png');
+}
+
+.ocean {
+    background-image: url('../coastline/media/testOceanrender.png');
+    animation-name: oceanWaves;
+    animation: oceanWaves 4s ease-in-out infinite alternate;
+}
+
+.back-hills {
+    background-image: url('../coastline/media/rockyCliffFar.png');
+}
+
+.far-trees {
+    background-image: url('../coastline/media/farTrees.png');
+}
+
+#front-hill {
+    background-image: url('../coastline/media/coastSideRocks.png');
+    width: 107vw;
+    height: 107vh;
+    top: -1%;
+    left: -5%;
+}
+
+
+@keyframes oceanWaves {
+  from {width: 110vw;}
+  to {width: 115vw;}
+}
+
+#close-rocks {
+    background-image: url('../coastline/media/closeRocks.png');
+}
+
+#mid-rocks {
+    background-image: url('../coastline/media/midRocks.png');
+}
+
+#far-rocks {
+    background-image: url('../coastline/media/farRocks.png');
+}
+
+#crab {
+    position: absolute;
+    width: 256px;
+    height: 172px;
+    left: 75%;
+    bottom: 10%;
+    scale: 0.8;
+    border: none;
+    cursor: pointer;
+}
+
+#seagull {
+    position: absolute;
+    width: 306px;
+    height: 170px;
+    top: 10%;
+    left: 40%;
+    bottom: 210px;
+    cursor: pointer;
+
+    animation-name: birdFly;
+    animation: birdFly 1s ease infinite alternate;
+}
+
+#crab:hover {
+    scale: 1;
+}
+
+#seagull:hover {
+    scale: 1.2;
+}
+
+@keyframes birdFly {
+  from {top: 10%;}
+  to {top: 12%;}
+}
+
+#dialogue-box {
+  border: 2px solid var(--border);
+  border-radius: 5px;
+}
+
+#choices button {
+  border-radius: 5px;
+}
