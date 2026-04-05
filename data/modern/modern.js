@@ -7,12 +7,10 @@ console.log(sceneState);
 
 speakerColors['Crab'] = '#ffffff';
 speakerColors['You']  = '#ffffff';
-// ----- Sounds -----
-var warSound = new Audio('/data/medieval/audio/war-sounds.mp3');
-warSound.volume = 0.5;
 
-var churchSound = new Audio('/data/medieval/audio/bell.mp3');
-churchSound.volume = 0.5;
+// ----- Sounds -----
+var satelliteSound = new Audio('/data/modern/audio/satellite-sound.mp3');
+var towerSound = new Audio('/data/modern/audio/radio-tower.mp3');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
@@ -29,11 +27,12 @@ document.getElementById('crab').addEventListener('click', () => {
   }
 });
 
-// Radio Tower OBJECT
-document.getElementById('radio-tower').addEventListener('click', () => {
+// Satellite OBJECT
+document.getElementById('satellite').addEventListener('click', () => {
   if (sceneState == 1){
-    warSound.play(); // change to radio sounds
-    loadDialogue('/data/modern/tower.json');
+    satelliteSound.currentTime = 0;
+    satelliteSound.play();
+    loadDialogue('/data/modern/satellite.json');
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -41,12 +40,12 @@ document.getElementById('radio-tower').addEventListener('click', () => {
   }
 });
 
-// Factory OBJECT
-document.getElementById('factory').addEventListener('click', () => {
+// Radio Tower OBJECT
+document.getElementById('radio-tower').addEventListener('click', () => {
   if (sceneState == 2){
-    churchSound.currentTime = 0;
-    churchSound.play();
-    loadDialogue('/data/medieval/church.json');
+    towerSound.currentTime = 0;
+    towerSound.play();
+    loadDialogue('/data/modern/tower.json');
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -98,15 +97,13 @@ phone.addEventListener('click', () => {
 });
 
 internetApp.addEventListener('click', () => {
-  if (sceneState == 1){
+  if (sceneState == 3){
     loadDialogue('/data/modern/internet.json');
   }
 });
 
-/* DEBUG BUTTON
-document.getElementById('nextSceneBtn').addEventListener('click', () => {
-  SceneManager.next();
-}); */
+
+// --------- EVENTS -------------
 
 function triggerEvent(eventName) {
   switch(eventName) {

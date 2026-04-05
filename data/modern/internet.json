@@ -19,13 +19,13 @@
     "4": {
       "speaker": "You",
       "text": "It's like a...",
-        "choices": [
+      "choices": [
         {
-          "text": "Place to learn",
+          "text": "Place to learn.",
           "next": "4_1_1"
         },
         {
-          "text": "Place to have fun",
+          "text": "Way to talk to anyone in the world.",
           "next": "4_2"
         }
       ]
@@ -68,26 +68,142 @@
     "4_1_8": {
       "speaker": "Crab",
       "text": "That is... both unsettling and very insightful.",
+      "next": "4_1_9"
+    },
+    "4_1_9": {
+      "speaker": "You",
+      "text": "Wait a second...",
+      "next": "4_1_10"
+    },
+    "4_1_10": {
+      "speaker": "You",
+      "text": "Your species only has a lifespan of around twenty years.",
+      "next": "4_1_11"
+    },
+    "4_1_11": {
+      "speaker": "You",
+      "text": "If that's the case, then how do you know all about the past?",
+      "next": "4_1_12"
+    },
+    "4_1_12": {
+      "speaker": "Crab",
+      "text": "It was my mother who taught me. And her mother told her. And all before. Perhaps it's in our DNA.",
+      "next": "4_1_13"
+    },
+    "4_1_13": {
+      "speaker": "You",
+      "text": "Oh, so you've been told these stories before?",
+      "next": "4_1_14"
+    },
+    "4_1_14": {
+      "speaker": "Crab",
+      "text": "Not stories, simply memories with no meaning.",
+      "next": "4_1_15"
+    },
+    "4_1_15": {
+      "speaker": "You",
+      "text": "I see...",
       "next": "5"
     },
     "4_2": {
       "speaker": "Crab",
-      "text": "I'm unfamiliar with the word 'fun'.",
+      "text": "Anyone? Across the whole world?",
       "next": "4_2_2"
     },
     "4_2_2": {
+      "speaker": "You",
+      "text": "Instantly. No matter where they are.",
+      "next": "4_2_3"
+    },
+    "4_2_3": {
       "speaker": "Crab",
-      "text": "Am I a fun thing on the internet?",
-      "next": "4_1_4"
+      "text": "And what do you say to them? All these people, everywhere at once?",
+      "next": "4_2_4"
+    },
+    "4_2_4": {
+      "speaker": "You",
+      "text": "Everything. News, opinions, memories... Sometimes nothing important at all.",
+      "next": "4_2_5"
+    },
+    "4_2_5": {
+      "speaker": "Crab",
+      "text": "So you built something that could reach every corner of the world... and you use it to tell stories.",
+      "next": "4_2_6"
+    },
+    "4_2_6": {
+      "speaker": "You",
+      "text": "I never thought of it like that. But yes, I guess so.",
+      "next": "4_2_7"
+    },
+    "4_2_7": {
+      "speaker": "Crab",
+      "text": "That has not changed at all.",
+      "next": "4_1_9"
     },
     "5": {
       "speaker": "Crab",
-      "text": "So much... innovation. You humans have changed so much over the years.",
+      "text": "As I look around here, I see so much innovation. You humans have changed so much over the years.",
       "next": "6"
+    },
+    "6": {
+      "speaker": "You",
+      "text": "Have we though?",
+      "next": "7"
+    },
+    "7": {
+      "speaker": "Crab",
+      "text": "Look at all of this. None of this existed when my ancestors first crawled ashore.",
+      "next": "8"
+    },
+    "8": {
+      "speaker": "You",
+      "text": "The tools changed, yes. But us people? We do it all because we are human. And part of humanity is to build something new.",
+      "next": "9"
+    },
+    "9": {
+      "speaker": "You",
+      "text": "I think that...",
+      "next": "10"
+    },
+    "10": {
+      "speaker": "You",
+      "text": "You don't need some big transformation, some evolution to change.",
+      "next": "11"
+    },
+    "11": {
+      "speaker": "Crab",
+      "text": "I had not thought of it that way.",
+      "next": "12"
+    },
+    "12": {
+      "speaker": "You",
+      "text": "Maybe that's the point. Maybe changing your perspective is enough to change who you are.",
+      "next": "13"
+    },
+    "13": {
+      "speaker": "Crab",
+      "text": "A new perspective... is its own kind of evolution?",
+      "next": "14"
+    },
+    "14": {
+      "speaker": "Crab",
+      "text": "I... I think I feel slightly different.",
+      "next": "15"
+    },
+    "15": {
+      "speaker": "Crab",
+      "text": "Thank you.",
+      "next": "16"
+    },
+    "16": {
+      "speaker": "Crab",
+      "text": "I think I am ready to move on.",
+      "next": "empty"
     },
     "empty": {
       "speaker": "",
       "text": "",
+      "event": "change_scene",
       "next": null
     }
   }
