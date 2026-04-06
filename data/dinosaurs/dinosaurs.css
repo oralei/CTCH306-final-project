@@ -3,7 +3,7 @@
     width: 256px;
     height: 172px;
     left: 75%;
-    bottom: 10%;
+    bottom: 15%;
     scale: 1.3;
     border: none;
     cursor: pointer;
@@ -13,9 +13,16 @@
     position: absolute;
     width: 896px;
     height: 742px;
+    bottom: 23%;
+    left: -2%;
     scale: 1;
     border: none;
     cursor: pointer;
+}
+
+#trex:hover{
+    scale: 1.1; 
+    left: 0%;
 }
 
 .meteor {
@@ -30,6 +37,10 @@
     cursor: pointer;
 
     animation: meteorChange 1.2s infinite;
+}
+
+.meteor:hover {
+    scale: 1.1;
 }
 
 @keyframes meteorChange {
@@ -80,11 +91,14 @@
 
 .palm-1 { background-image: url('../dinosaurs/media/palm1.png');
     width: 104vw;
-    height: 104vh;}
+    height: 104vh;    
+    top: 3%;
+}
 
 .palm-2 { background-image: url('../dinosaurs/media/palm2.png');
     width: 104vw;
-    height: 104vh;}
+    height: 104vh;
+}
 
 .palm-3 { background-image: url('../dinosaurs/media/palm3.png');
     width: 104vw;
@@ -92,7 +106,9 @@
 
 .bush-1 { background-image: url('../dinosaurs/media/bush1.png');
     width: 104vw;
-    height: 104vh;}
+    height: 104vh;
+    top: 3%;
+}
 
 
 #crab:hover {

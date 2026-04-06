@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 :root {
-  --bg: #e4ddbf;
-  --surface: #f3efeb;
-  --border: #100929;
-  --text: #100929;
-  --text-dim: #100929;
-  --accent: #100929;
-  --accent-dim: #100929;
-  --speaker-color: #100929;
+  --bg: #ccd4bf;
+  --surface: #e7e9e4;
+  --border: #1f301e;
+  --text: #1f301e;
+  --text-dim: #1f301e;
+  --accent: #1f301e;
+  --accent-dim: #1f301e;
+  --speaker-color: #1f301e;
 }
 
 #speaker {
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -27,16 +27,18 @@
 #choices button {
   font-family: "Roboto Slab";
   font-size: 1rem;
+  border: 2px solid #9eaa99;
+  border-radius: 2px;
 }
 
 #choices button:hover {
   border-color: var(--accent);
   color: var(--text);
-  background: #dde9da;
+  background: #deebd2;
 }
 
 #continue-hint {
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "Oswald", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -47,6 +49,6 @@
 }
 
 .test-title {
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "Oswald", sans-serif;
   font-size: 2.3rem;
 }
