@@ -1,27 +1,27 @@
 .bg {
-    background-image: url('../coastline/media/coastSky.png');
+    background-image: url('/data/outro/media/nightSky.png');
 }
 
 .beach {
-    background-image: url('../coastline/media/coastBeach2.png');
+    background-image: url('/data/outro/media/beachNight.png');
 }
 
 .ocean {
-    background-image: url('../coastline/media/testOceanrender.png');
+    background-image: url('/data/outro/media/oceanNight.png');
     animation-name: oceanWaves;
     animation: oceanWaves 4s ease-in-out infinite alternate;
 }
 
 .back-hills {
-    background-image: url('../coastline/media/rockyCliffFar.png');
+    background-image: url('/data/outro/media/nightCliffFar.png');
 }
 
 .far-trees {
-    background-image: url('../coastline/media/farTrees.png');
+    background-image: url('/data/outro/media/nightTrees.png');
 }
 
 #front-hill {
-    background-image: url('../coastline/media/coastSideRocks.png');
+    background-image: url('/data/outro/media/nightCoastSideRocks.png');
     width: 107vw;
     height: 107vh;
     top: -1%;
@@ -35,47 +35,45 @@
 }
 
 #close-rocks {
-    background-image: url('../coastline/media/closeRocks.png');
+    background-image: url('/data/outro/media/nightCloseRocks.png');
 }
 
 #mid-rocks {
-    background-image: url('../coastline/media/midRocks.png');
+    background-image: url('/data/outro/media/nightMidRocks.png');
 }
 
 #far-rocks {
-    background-image: url('../coastline/media/farRocks.png');
+    background-image: url('/data/outro/media/nightFarRocks.png');
 }
 
 #crab {
     position: absolute;
     width: 256px;
     height: 172px;
-    left: 75%;
-    bottom: 10%;
-    scale: 0.8;
+    left: 14%;
+    bottom: 11%;
+    scale: 1;
     border: none;
     cursor: pointer;
 }
 
-#seagull {
+#moon {
     position: absolute;
-    width: 306px;
-    height: 170px;
-    top: 10%;
-    left: 40%;
+    width: 500px;
+    height: 500px;
+    top: -5%;
+    left: 34%;
     bottom: 210px;
+    scale: 0.4;
     cursor: pointer;
-
-    animation-name: birdFly;
-    animation: birdFly 1s ease infinite alternate;
 }
 
 #crab:hover {
     scale: 1;
 }
 
-#seagull:hover {
-    scale: 1.2;
+#moon:hover {
+    scale: 0.42;
 }
 
 @keyframes birdFly {

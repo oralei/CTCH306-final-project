@@ -18,17 +18,20 @@ requestAnimationFrame(() => requestAnimationFrame(() => {
   }, 300);
 }));
 
+var playButtonSound = new Audio('/data/coastline/audio/playButton.mp3');
+
 // Play button: fade menu out, then fade scene in
 document.getElementById('play-btn').addEventListener('click', () => {
+  playButtonSound.play();
   const menu = document.getElementById('main-menu');
-  menu.style.transition = 'opacity 0.8s ease';
+  menu.style.transition = 'opacity 3s ease';
   menu.style.opacity = '0';
   menu.style.pointerEvents = 'none';
 
   setTimeout(() => {
     menu.style.display = 'none';
     SceneManager.fadeInScene(900);
-  }, 800);
+  }, 3000);
 });
 
 // Dialogue Variables
@@ -36,11 +39,13 @@ const dialogueVars = {
   time: (getTime().getHours()+":"+(getTime().getMinutes() < 10 ? '0' : '') + getTime().getMinutes())
 };
 
+
+
 document.getElementById('crab').addEventListener('click', () => {
-  moveObject('crab', 13, 5);
+  moveObject('crab', 13, 13);
   scaleObject('crab', 1.1)
   loadDialogue('/data/intro/intro.json');
-  document.getElementById("crab").src="../data/coastline/media/testCrab.png";
+  document.getElementById("crab").src="/data/coastline/media/testCrab.png";
 });
 
 document.getElementById('seagull').addEventListener('click', () => {

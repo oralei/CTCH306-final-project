@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>things don't change</title>
+    <title>tdc - outro</title>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
     <link rel="stylesheet" href="/src/dialogue.css" />
@@ -26,9 +26,12 @@
       <div class="parallax-item parallax-full" id="close-rocks" data-depth="0.24" data-tilt="0.3"></div>
 
       <!-- CRAB ! -->
-      <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/coastline/media/testCrab.png">
+      <img class="parallax-item" data-depth="0.4" data-tilt="0.1" id='moon' src="/data/outro/media/moon.png">
 
-    <button type="button" id="nextSceneBtn" class="next-button" onclick="SceneManager.restart()">restart</button>
+      <!-- CRAB ! -->
+      <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/coastline/media/crabBackView.png">
+
+    <!-- <button type="button" id="nextSceneBtn" class="next-button" onclick="SceneManager.restart()">restart</button>-->
     </div>
 
   <div class="noselect" id="dialogue-box">
@@ -48,11 +51,10 @@
 
   <h1>goodbye...</h1>
 </body>  
-  <script src="/src/outro.js"></script>
-  <script src="/src/dialogue.js"></script>
   <script src="/src/sceneManager.js"></script>
+  <script src="/src/dialogue.js"></script>
   <script src="/src/parallax.js"></script>
-  <script>SceneManager.init('outro')</script>
+  <script src="/data/outro/outro.js"></script>
   <script>
     var audio = document.getElementById("wind");
     audio.volume = 0.1; // Made silent for now

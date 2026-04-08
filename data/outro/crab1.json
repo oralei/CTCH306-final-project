@@ -1,0 +1,20 @@
+{
+  "start": "1",
+  "nodes": {
+    "1": {
+      "speaker": "You",
+      "text": "What are you looking at?",
+      "next": "2"
+    },
+    "2": {
+      "speaker": "Crab",
+      "text": "Oh, nothing really. Just watching the waves as usual.",
+      "next": "empty"
+    },
+    "empty": {
+      "speaker": "",
+      "text": "",
+      "next": null
+    }
+  }
+}

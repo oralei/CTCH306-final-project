@@ -8,6 +8,8 @@ console.log(sceneState);
 // ---------- SOUNDS -------------
 var dinoSound1 = new Audio('/data/dinosaurs/audio/grumble.mp3');
 var dinoSound2 = new Audio('/data/dinosaurs/audio/dino_roar.mp3');
+var meteorAmbience = new Audio('/data/dinosaurs/audio/meteorTheme.wav');
+var meteorSound = new Audio('/data/dinosaurs/audio/meteorFire.mp3');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
@@ -42,6 +44,7 @@ document.getElementById('trex').addEventListener('click', () => {
 document.getElementById('meteor').addEventListener('click', () => {
   if (sceneState == 3){
     loadDialogue('/data/dinosaurs/meteor.json');
+    meteorSound.play();
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -68,10 +71,13 @@ function triggerEvent(eventName) {
   }
 }
 
+
+
 function ShowMeteor()
 {
   sceneState++;
   console.log(sceneState);
+  meteorAmbience.play()
   document.getElementById('meteor').classList.remove("hidden");
   document.getElementById('sky-bg').classList.add("red-sky");
 }
