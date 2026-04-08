@@ -7,17 +7,16 @@ console.log("sceneManager.js loaded sucessfully!");
 //
 //  SETUP
 //  ─────
-//  1. Drop this file in your /src/ folder.
-//  2. Add to every scene page (before closing </body>),
+//  Add to every scene page (before closing </body>),
 //     BEFORE your scene's intro.js:
 //       <script src="src/sceneManager.js"></script>
 //       <script src="data/egypt/egypt.js"></script>
-//  3. In your dialogue JSON, use this event on the node that
+//  In your dialogue JSON, use this event on the node that
 //     should end the scene:
 //       "event": "go_to_next_scene"
-//  4. In each scene's JS file, call SceneManager.init() with
+//  In each scene's JS file, call SceneManager.init() with
 //     that scene's key as the very first line:
-//       SceneManager.init('egypt');
+//       SceneManager.init('modern');
 //
 //  SCENES REGISTRY
 //  ───────────────
@@ -26,12 +25,12 @@ console.log("sceneManager.js loaded sucessfully!");
 // ─────────────────────────────────────────────────────────────
 
 const SCENES = [
-  { key: 'intro',      url: 'CTCH306-final-project/index.html'},  // intro hub
-  { key: 'dinosaurs',  url: 'CTCH306-final-project/data/dinosaurs/dinosaurs.html'},
+  { key: 'intro',      url: 'index.html'},  // intro hub
+  { key: 'dinosaurs',  url: 'data/dinosaurs/dinosaurs.html'},
   // Removed for now { key: 'egypt',      url: '/data/egypt/egypt.html'},
-  { key: 'medieval',   url: 'CTCH306-final-project/data/medieval/medieval.html'},
-  { key: 'modern',     url: 'CTCH306-final-project/data/modern/modern.html'},
-  { key: 'outro',      url: 'CTCH306-final-project/data/outro/outro.html'},
+  { key: 'medieval',   url: 'data/medieval/medieval.html'},
+  { key: 'modern',     url: 'data/modern/modern.html'},
+  { key: 'outro',      url: 'data/outro/outro.html'},
 ];
 
 // Keys that are NEVER picked randomly.
