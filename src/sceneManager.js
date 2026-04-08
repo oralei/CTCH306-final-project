@@ -26,12 +26,12 @@ console.log("sceneManager.js loaded sucessfully!");
 // ─────────────────────────────────────────────────────────────
 
 const SCENES = [
-  { key: 'intro',      url: 'index.html'},  // intro hub
-  { key: 'dinosaurs',  url: 'data/dinosaurs/dinosaurs.html'},
+  { key: 'intro',      url: 'CTCH306-final-project/index.html'},  // intro hub
+  { key: 'dinosaurs',  url: 'CTCH306-final-project/data/dinosaurs/dinosaurs.html'},
   // Removed for now { key: 'egypt',      url: '/data/egypt/egypt.html'},
-  { key: 'medieval',   url: 'data/medieval/medieval.html'},
-  { key: 'modern',     url: 'data/modern/modern.html'},
-  { key: 'outro',      url: 'data/outro/outro.html'},
+  { key: 'medieval',   url: 'CTCH306-final-project/data/medieval/medieval.html'},
+  { key: 'modern',     url: 'CTCH306-final-project/data/modern/modern.html'},
+  { key: 'outro',      url: 'CTCH306-final-project/data/outro/outro.html'},
 ];
 
 // Keys that are NEVER picked randomly.
