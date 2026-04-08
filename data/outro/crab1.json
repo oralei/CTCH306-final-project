@@ -9,11 +9,236 @@
     "2": {
       "speaker": "Crab",
       "text": "Oh, nothing really. Just watching the waves as usual.",
+      "next": "3"
+    },
+    "3": {
+      "speaker": "Crab",
+      "text": "It's gotten quite dark has it not?",
+      "event": "turn_around",
+      "next": "4"
+    },
+    "4": {
+      "speaker": "You",
+      "text": "Yeah. We spent all day talking, haha.",
+      "next": "5"
+    },
+    "5": {
+      "speaker": "Crab",
+      "text": "Indeed we did.",
+      "next": "6"
+    },
+    "6": {
+      "speaker": "You",
+      "text": "So...",
+      "next": "7"
+    },
+    "7": {
+      "speaker": "You",
+      "text": "Did it help?",
+      "next": "8"
+    },
+    "8": {
+      "speaker": "You",
+      "text": "I tried my best to help you understand those memories a little better.",
+      "next": "9"
+    },
+    "9": {
+      "speaker": "Crab",
+      "text": "You did more than that. You helped me look at them through a new lens.",
+      "next": "10"
+    },
+    "10": {
+      "speaker": "Crab",
+      "text": "So much of the world has been destroyed and rebuilt. Over and over.",
+      "next": "11"
+    },
+    "11": {
+      "speaker": "Crab",
+      "text": "And yet, look at me. I am still the same. My shell has not shifted. I will still crawl along this shore just as my ancestors did.",
+      "next": "12"
+    },
+    "12": {
+      "speaker": "Crab",
+      "text": "But... I used to think that meant my existence was empty. That I was just a clock ticking away in the sand.",
+      "next": "13"
+    },
+    "13": {
+      "speaker": "You",
+      "text": "And now?",
+      "next": "14"
+    },
+    "14": {
+      "speaker": "Crab",
+      "text": "Now, these memories no longer feel like such a burden.",
+      "next": "16"
+    },
+    "16": {
+      "speaker": "You",
+      "text": "And why is that?",
+      "next": "17"
+    },
+    "17": {
+      "speaker": "Crab",
+      "text": "Because of the giants. The 'dinosaurs'. Their time was brief, but it meant everything to them.",
+      "next": "18"
+    },
+    "18": {
+      "speaker": "Crab",
+      "text": "I realize now... it is not how much time you have that gives it meaning.",
+      "next": "19"
+    },
+    "19": {
+      "speaker": "You",
+      "text": "And for your kind, it's a very long time.",
+      "next": "20"
+    },
+    "20": {
+      "speaker": "You",
+      "text": "What else have you learned?",
+      "next": "21"
+    },
+    "21": {
+      "speaker": "Crab",
+      "text": "The people in the churches. Or the fallen in the wars. Most of their names are entirely forgotten.",
+      "next": "22"
+    },
+    "22": {
+      "speaker": "Crab",
+      "text": "But they still left something, even if it's not written. It was enough to give themselves meaning.",
+      "next": "23"
+    },
+    "23": {
+      "speaker": "Crab",
+      "text": "I thought evolution meant growing new claws. A physical transformation to prove I had changed.",
+      "next": "24"
+    },
+    "24": {
+      "speaker": "Crab",
+      "text": "But your modern world... showed me that isn't needed in order to change.",
+      "next": "25"
+    },
+    "25": {
+      "speaker": "Crab",
+      "text": "You just need a new perspective.",
+      "next": "26"
+    },
+    "26": {
+      "speaker": "You",
+      "text": "That's all it really is, isn't it?",
+      "next": "28"
+    },
+    "28": {
+      "speaker": "Crab",
+      "text": "The memories inside me... they always felt so heavy, yet empty.",
+      "next": "29"
+    },
+    "29": {
+      "speaker": "Crab",
+      "text": "Just data in my DNA.",
+      "next": "30"
+    },
+    "30": {
+      "speaker": "Crab",
+      "text": "But by telling them to you... and having you listen... they became more than just memories... more than time itself.",
+      "next": "31"
+    },
+    "31": {
+      "speaker": "Crab",
+      "text": "They became stories. A part of myself.",
+      "next": "32"
+    },
+    "32": {
+      "speaker": "You",
+      "text": "That's what stories are for. They're not just for the listener. But the teller as well.",
+      "next": "36"
+    },
+    "36": {
+      "speaker": "Crab",
+      "text": "This feeling... is strange",
+      "next": "37"
+    },
+    "37": {
+      "speaker": "Crab",
+      "text": "I am not sure what to call it.",
+      "next": "38"
+    },
+    "38": {
+      "speaker": "You",
+      "text": "Maybe that's the feeling of change.",
+      "next": "39"
+    },
+    "39": {
+      "speaker": "Crab",
+      "text": "...",
+      "event": "turn_around",
+      "next": "40"
+    },
+    "40": {
+      "speaker": "Crab",
+      "text": "The tides are still the same.",
+      "next": "41"
+    },
+    "41": {
+      "speaker": "Crab",
+      "text": "Same sound. Same pull. Same shore.",
+      "next": "42"
+    },
+    "42": {
+      "speaker": "Crab",
+      "text": "But I think I am hearing them differently tonight.",
+      "next": "44"
+    },
+    "44": {
+      "speaker": "Crab",
+      "text": "Thank you.",
+      "event": "turn_around",
+      "next": "45"
+    },
+    "45": {
+      "speaker": "Crab",
+      "text": "For telling me my story.",
+      "next": "46"
+    },
+    "46": {
+      "speaker": "You",
+      "text": "You helped tell it too.",
+      "next": "47"
+    },
+    "47": {
+      "speaker": "Crab",
+      "text": "...",
+      "next": "48"
+    },
+    "48": {
+      "speaker": "Crab",
+      "text": "Perhaps I will count how many waves crash tonight.",
+      "next": "49"
+    },
+    "49": {
+      "speaker": "Crab",
+      "text": "Not to measure the time.",
+      "event": "turn_around",
+      "next": "50"
+    },
+    "50": {
+      "speaker": "Crab",
+      "text": "Just to listen.",
+      "next": "51"
+    },
+    "51": {
+      "speaker": "",
+      "text": "*The waves drift slowly, forward and back*",
+      "next": "52"
+    },
+    "52": {
+      "speaker": "",
+      "text": "*And a faint feeling of something new, stirs in the air*",
       "next": "empty"
     },
     "empty": {
       "speaker": "",
       "text": "",
+      "event": "end_game",
       "next": null
     }
   }

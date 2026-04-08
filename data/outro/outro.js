@@ -10,11 +10,9 @@ var crabSound = new Audio('/data/dinosaurs/audio/grumble.mp3');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
-  if (sceneState == 0){
+  if (sceneState >= 0){
+    sceneState = 1;
     loadDialogue('/data/outro/crab1.json');
-  }
-  else if (sceneState == 2){
-    loadDialogue('/data/dinosaurs/dino-crab2.json');
   }
   else{
     loadDialogue('/src/look-around.json');
@@ -28,8 +26,7 @@ document.getElementById('moon').addEventListener('click', () => {
     loadDialogue('/data/outro/moon.json');
   }
   else{
-    loadDialogue('/src/look-around.json');
-    console.log("You need to progress! Scene State: " + sceneState);
+    console.log("Nope.");
   }
 });
 
@@ -43,11 +40,8 @@ function triggerEvent(eventName) {
       sceneState++;
       console.log(sceneState);
       break;
-    case "show_meteor":
-      ShowMeteor()
-      break;
-    case "meteor_crash":
-      MeteorCrash();
+    case "turn_around":
+      console.log("pee");
       break;
   }
 }
