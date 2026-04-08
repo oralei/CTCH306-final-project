@@ -40,6 +40,7 @@ function triggerEvent(eventName) {
       break;
     case "turn_around":
       console.log("pee");
+      turnAround();
       break;
     case "restart_game":
       SceneManager.restart();
@@ -51,13 +52,17 @@ function turnAround()
 {
   if (turnAround == true)
   {
+    // now facing player
     document.getElementById("crab").src="data/coastline/media/testCrab.png";
     triggerJump(document.getElementById("crab"));
+    turnAround = false;
   }
   else
   {
+    // now facing away
     document.getElementById("crab").src="data/coastline/media/crabBackview.png";
     triggerJump(document.getElementById("crab"));
+    turnAround = true;
   }
 }
 
