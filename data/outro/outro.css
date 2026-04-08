@@ -1,27 +1,27 @@
 .bg {
-    background-image: url('/data/outro/media/nightSky.png');
+    background-image: url('media/nightSky.png');
 }
 
 .beach {
-    background-image: url('/data/outro/media/beachNight.png');
+    background-image: url('media/beachNight.png');
 }
 
 .ocean {
-    background-image: url('/data/outro/media/oceanNight.png');
+    background-image: url('media/oceanNight.png');
     animation-name: oceanWaves;
     animation: oceanWaves 4s ease-in-out infinite alternate;
 }
 
 .back-hills {
-    background-image: url('/data/outro/media/nightCliffFar.png');
+    background-image: url('media/nightCliffFar.png');
 }
 
 .far-trees {
-    background-image: url('/data/outro/media/nightTrees.png');
+    background-image: url('media/nightTrees.png');
 }
 
 #front-hill {
-    background-image: url('/data/outro/media/nightCoastSideRocks.png');
+    background-image: url('media/nightCoastSideRocks.png');
     width: 107vw;
     height: 107vh;
     top: -1%;
@@ -35,15 +35,15 @@
 }
 
 #close-rocks {
-    background-image: url('/data/outro/media/nightCloseRocks.png');
+    background-image: url('media/nightCloseRocks.png');
 }
 
 #mid-rocks {
-    background-image: url('/data/outro/media/nightMidRocks.png');
+    background-image: url('media/nightMidRocks.png');
 }
 
 #far-rocks {
-    background-image: url('/data/outro/media/nightFarRocks.png');
+    background-image: url('media/nightFarRocks.png');
 }
 
 #crab {
