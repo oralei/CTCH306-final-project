@@ -157,6 +157,11 @@ const SceneManager = {
    * @param {string} sceneKey  Must match a key in SCENES[].
    */
   init(sceneKey) {
+    // 1. AUTO-RESET: If we are loading the main title page, clear all progress!
+    if (sceneKey === 'intro') {
+      this.reset();
+    }
+
     markVisited(sceneKey);
 
     // Page starts fully black; fade in once the DOM is ready.
@@ -166,13 +171,16 @@ const SceneManager = {
     overlay.style.pointerEvents = 'all';
 
     // HOLD THE BLACK SCREEN FOR 500ms ON NEW PAGE LOAD
-    requestAnimationFrame(() =>
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          fadeFromBlack(900);
-        }, 500); // Adjust this number (in milliseconds) if you want it longer/shorter
-      })
-    );
+    // Only auto-fade-in for non-intro scenes
+    if (sceneKey !== 'intro') {
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            fadeFromBlack(900);
+          }, 500);
+        })
+      );
+}
 
     console.log(
       `[SceneManager] "${sceneKey}" loaded | ` +
@@ -193,11 +201,22 @@ const SceneManager = {
   /** True once every era has been visited. */
   allErasVisited,
 
-  /** Wipe progress — handy during development. */
+  /** Wipe progress. */
   reset() {
     sessionStorage.removeItem(STORAGE_KEY);
     console.log('[SceneManager] Progress reset.');
   },
+
+  /** 2. PLAY AGAIN: Wipes progress and initiates a fade-transition back to the intro */
+  async restart() {
+    this.reset();
+    await goToScene('intro');
+  },
+
+  fadeInScene(duration = 900) {
+    fadeFromBlack(duration);
+  },
+  /** Fade the scene in from black. Call this after the intro menu is dismissed. */
 };
 
 // ─── Hook into dialogue.js triggerEvent ───────────────────────

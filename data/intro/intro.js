@@ -1,5 +1,35 @@
 console.log("intro.js loaded sucessfully!");
-SceneManager.init()
+SceneManager.init('intro')
+
+requestAnimationFrame(() => requestAnimationFrame(() => {
+  setTimeout(() => {
+    const menu = document.getElementById('main-menu');
+    menu.style.transition = 'none';      // instant, no fade
+    menu.style.opacity = '1';
+    menu.style.pointerEvents = 'all';
+    menu.classList.add('visible');
+
+    // Re-enable transition for when Play dismisses it
+    setTimeout(() => {
+      menu.style.transition = 'opacity 0.8s ease';
+    }, 50);
+
+    SceneManager.fadeInScene(600);
+  }, 300);
+}));
+
+// Play button: fade menu out, then fade scene in
+document.getElementById('play-btn').addEventListener('click', () => {
+  const menu = document.getElementById('main-menu');
+  menu.style.transition = 'opacity 0.8s ease';
+  menu.style.opacity = '0';
+  menu.style.pointerEvents = 'none';
+
+  setTimeout(() => {
+    menu.style.display = 'none';
+    SceneManager.fadeInScene(900);
+  }, 800);
+});
 
 // Dialogue Variables
 const dialogueVars = {

@@ -5,6 +5,10 @@ SceneManager.init('dinosaurs')
 var sceneState = 0;
 console.log(sceneState);
 
+// ---------- SOUNDS -------------
+var dinoSound1 = new Audio('/data/dinosaurs/audio/grumble.mp3');
+var dinoSound2 = new Audio('/data/dinosaurs/audio/dino_roar.mp3');
+
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
@@ -22,10 +26,14 @@ document.getElementById('crab').addEventListener('click', () => {
 // TREX OBJECT
 document.getElementById('trex').addEventListener('click', () => {
   if (sceneState == 1){
+    dinoSound2.currentTime = 0;
+    dinoSound2.play();
     loadDialogue('/data/dinosaurs/trex-dialogue.json');
   }
   else{
     loadDialogue('/src/look-around.json');
+    dinoSound1.currentTime = 0;
+    dinoSound1.play();
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
