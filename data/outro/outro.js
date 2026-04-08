@@ -50,19 +50,19 @@ function triggerEvent(eventName) {
 
 function turnAround()
 {
-  if (turnAround == true)
+  if (turnedBack == true)
   {
     // now facing player
     document.getElementById("crab").src="data/coastline/media/testCrab.png";
     triggerJump(document.getElementById("crab"));
-    turnAround = false;
+    turnedBack = false;
   }
   else
   {
     // now facing away
     document.getElementById("crab").src="data/coastline/media/crabBackview.png";
     triggerJump(document.getElementById("crab"));
-    turnAround = true;
+    turnedBack = true;
   }
 }
 
