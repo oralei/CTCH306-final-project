@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: PixelOperator; /* set name */
-  src: url(/data/src/pixel_operator/PixelOperator.ttf); /* url of the font */
+  src: url(data/src/pixel_operator/PixelOperator.ttf); /* url of the font */
 }
 
 .bg {

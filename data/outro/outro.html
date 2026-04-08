@@ -3,10 +3,11 @@
   <head>
     <title>tdc - outro</title>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-    <link rel="stylesheet" href="/src/dialogue.css" />
-    <link rel="stylesheet" href="/src/parallax.css" />
-    <link rel="stylesheet" href="/data/outro/outro.css" />
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.png">
+    <link rel="stylesheet" href="src/dialogue.css" />
+    <link rel="stylesheet" href="src/parallax.css" />
+    <link rel="stylesheet" href="data/outro/outro.css" />
+    <base href="/CTCH306-final-project/">
   </head>
 
   <body>
@@ -43,18 +44,18 @@
 
     <!-- Audio -->
     <audio id="wind" autoplay loop style="display:none">
-      <source src="/data/coastline/audio/wind.mp3" type="audio/mp3">
+      <source src="data/coastline/audio/wind.mp3" type="audio/mp3">
     </audio>
     <audio id="next-sound" style="display:none">
-      <source src="/data/coastline/audio/coast_next.mp3" type="audio/mp3">
+      <source src="data/coastline/audio/coast_next.mp3" type="audio/mp3">
     </audio>
 
   <h1>goodbye...</h1>
 </body>  
-  <script src="/src/sceneManager.js"></script>
-  <script src="/src/dialogue.js"></script>
-  <script src="/src/parallax.js"></script>
-  <script src="/data/outro/outro.js"></script>
+  <script src="src/sceneManager.js"></script>
+  <script src="src/dialogue.js"></script>
+  <script src="src/parallax.js"></script>
+  <script src="data/outro/outro.js"></script>
   <script>
     var audio = document.getElementById("wind");
     audio.volume = 0.1; // Made silent for now
