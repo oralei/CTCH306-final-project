@@ -5,6 +5,8 @@ SceneManager.init('outro');
 var sceneState = 0;
 console.log(sceneState);
 
+var turnedBack = true;
+
 // ---------- SOUNDS -------------
 var crabSound = new Audio('data/dinosaurs/audio/grumble.mp3');
 
@@ -39,5 +41,30 @@ function triggerEvent(eventName) {
     case "turn_around":
       console.log("pee");
       break;
+    case "restart_game":
+      SceneManager.restart();
+      break;
   }
+}
+
+function turnAround()
+{
+  if (turnAround == true)
+  {
+    document.getElementById("crab").src="data/coastline/media/testCrab.png";
+    triggerJump(document.getElementById("crab"));
+  }
+  else
+  {
+    document.getElementById("crab").src="data/coastline/media/crabBackview.png";
+    triggerJump(document.getElementById("crab"));
+  }
+}
+
+function triggerJump(element) {
+  element.classList.add('jumping');
+
+  element.addEventListener('animationend', () => {
+    element.classList.remove('jumping');
+  }, { once: true });  // "once: true" auto-removes the listener after it fires
 }

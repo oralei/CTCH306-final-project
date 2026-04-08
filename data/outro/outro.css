@@ -89,3 +89,13 @@
 #choices button {
   border-radius: 5px;
 }
+
+@keyframes jump {
+  from {bottom: 11%;}
+  to {bottom: 10.5%;}
+}
+
+.jumping {
+  animation: jump 0.3s ease forwards;
+  animation-iteration-count: 1; /* plays once */
+}

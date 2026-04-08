@@ -27,10 +27,10 @@ console.log("sceneManager.js loaded sucessfully!");
 const SCENES = [
   { key: 'intro',      url: 'index.html'},  // intro hub
   { key: 'dinosaurs',  url: 'data/dinosaurs/dinosaurs.html'},
-  // Removed for now { key: 'egypt',      url: '/data/egypt/egypt.html'},
   { key: 'medieval',   url: 'data/medieval/medieval.html'},
   { key: 'modern',     url: 'data/modern/modern.html'},
   { key: 'outro',      url: 'data/outro/outro.html'},
+  // { key: 'egypt',      url: '/data/egypt/egypt.html'}, Removed for now 
 ];
 
 // Keys that are NEVER picked randomly.

@@ -238,7 +238,7 @@
     "empty": {
       "speaker": "",
       "text": "",
-      "event": "end_game",
+      "event": "restart_game",
       "next": null
     }
   }
