@@ -33,7 +33,7 @@
     bottom: 75%;
     scale: 1;
     border: none;
-    background-image: url('../dinosaurs/media/meteor1.png');
+    background-image: url('media/meteor1.png');
     cursor: pointer;
 
     animation: meteorChange 1.2s infinite;
@@ -44,8 +44,8 @@
 }
 
 @keyframes meteorChange {
-  from {background-image: url('../dinosaurs/media/meteor1.png');}
-  to {background-image: url('../dinosaurs/media/meteor2.png');}
+  from {background-image: url('media/meteor1.png');}
+  to {background-image: url('media/meteor2.png');}
 }
 
 .parallax-full {
@@ -59,52 +59,52 @@
     background-repeat: no-repeat;
 }
 
-.bg { background-image: url('../dinosaurs/media/sky.png');}
+.bg { background-image: url('media/sky.png');}
 
-.red-sky { background-image: url('../dinosaurs/media/redSky.png');}
+.red-sky { background-image: url('media/redSky.png');}
 
-.clouds { background-image: url('../dinosaurs/media/clouds.png');}
+.clouds { background-image: url('media/clouds.png');}
 
-.mountain { background-image: url('../dinosaurs/media/mountain.png');}
+.mountain { background-image: url('media/mountain.png');}
 
-.back-forest-1 { background-image: url('../dinosaurs/media/backForest1.png');}
+.back-forest-1 { background-image: url('media/backForest1.png');}
 
-.back-forest-2 { background-image: url('../dinosaurs/media/backForest2.png');}
+.back-forest-2 { background-image: url('media/backForest2.png');}
 
-.ground { background-image: url('../dinosaurs/media/ground.png');}
+.ground { background-image: url('media/ground.png');}
 
-.back-tree-1 { background-image: url('../dinosaurs/media/backTree1.png');}
+.back-tree-1 { background-image: url('media/backTree1.png');}
 
-.back-tree-2 { background-image: url('../dinosaurs/media/backTree2.png');}
+.back-tree-2 { background-image: url('media/backTree2.png');}
 
-.front-tree-1 { background-image: url('../dinosaurs/media/frontTree1.png');}
+.front-tree-1 { background-image: url('media/frontTree1.png');}
 
-.front-tree-2 { background-image: url('../dinosaurs/media/frontTree2.png');}
+.front-tree-2 { background-image: url('media/frontTree2.png');}
 
-.front-leaf-1 { background-image: url('../dinosaurs/media/frontLeaf1.png');
+.front-leaf-1 { background-image: url('media/frontLeaf1.png');
     width: 104vw;
     height: 104vh;}
 
-.front-leaf-2 { background-image: url('../dinosaurs/media/frontLeaf2.png');
+.front-leaf-2 { background-image: url('media/frontLeaf2.png');
     width: 104vw;
     height: 104vh;}
 
-.palm-1 { background-image: url('../dinosaurs/media/palm1.png');
+.palm-1 { background-image: url('media/palm1.png');
     width: 104vw;
     height: 104vh;    
     top: 3%;
 }
 
-.palm-2 { background-image: url('../dinosaurs/media/palm2.png');
+.palm-2 { background-image: url('media/palm2.png');
     width: 104vw;
     height: 104vh;
 }
 
-.palm-3 { background-image: url('../dinosaurs/media/palm3.png');
+.palm-3 { background-image: url('media/palm3.png');
     width: 104vw;
     height: 104vh;}
 
-.bush-1 { background-image: url('../dinosaurs/media/bush1.png');
+.bush-1 { background-image: url('media/bush1.png');
     width: 104vw;
     height: 104vh;
     top: 3%;

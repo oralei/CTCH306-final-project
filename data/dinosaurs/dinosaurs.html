@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="/CTCH306-final-project/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - dino</title>
-  <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css"/>
-  <link rel="stylesheet" href="/src/parallax.css"/>
-  <link rel="stylesheet" href="/data/intro/intro.css" />
-  <link rel="stylesheet" href="/data/dinosaurs/dinosaurs.css" />
-  <link rel="stylesheet" href="/data/dinosaurs/dino-dialogue.css" />
+  <link rel="icon" type="image/x-icon" href="src/images/favicon.png">
+  <link rel="stylesheet" href="src/dialogue.css"/>
+  <link rel="stylesheet" href="src/parallax.css"/>
+  <link rel="stylesheet" href="data/intro/intro.css" />
+  <link rel="stylesheet" href="data/dinosaurs/dinosaurs.css" />
+  <link rel="stylesheet" href="data/dinosaurs/dino-dialogue.css" />
 </head>
 
 <body>
@@ -29,7 +30,7 @@
     <div class="parallax-item parallax-full back-tree-2" data-depth="0.15" data-tilt="0.12"></div>
 
     <!-- DINOASAUR TREX ! -->
-    <img class="parallax-item" data-depth="0.12" data-tilt="0.2" id='trex' src="/data/dinosaurs/media/dino.png">
+    <img class="parallax-item" data-depth="0.12" data-tilt="0.2" id='trex' src="data/dinosaurs/media/dino.png">
 
     <div class="parallax-item parallax-full clickthru front-tree-2" data-depth="0.15" data-tilt="0.16"></div>
 
@@ -40,7 +41,7 @@
     <div class="parallax-item parallax-full clickthru front-leaf-2" data-depth="0.34" data-tilt="0.22"></div>
 
     <!-- CRAB ! -->
-    <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="/data/dinosaurs/media/crabMain.png">
+    <img class="parallax-item" data-depth="0.4" data-tilt="1" id='crab' src="data/dinosaurs/media/crabMain.png">
 
     <div class="parallax-item parallax-full clickthru front-tree-1" data-depth="0.15" data-tilt="0.17"></div>
     <div class="parallax-item parallax-full clickthru palm-1" data-depth="0.34" data-tilt="0.2"></div>
@@ -49,14 +50,6 @@
     <!-- METEOR ! -->
     <div class="parallax-item meteor hidden" data-depth="0.4" data-tilt="0.4" id='meteor'></div>
 
-    <!--<div class="parallax-item test-title">DINOSAUR GHRRR</div>
-    <button type="button" id="nextSceneBtn" class="next-button">GO NEXT SCENE!</button> -->
-
-    <!-- SEAGULL 
-    <img class="parallax-item" data-depth="0.1" data-tilt="0.4" id='seagull' src="/data/coastline/media/seagull.png">-->
-
-    <!-- Vignette, Godrays-->
-    <!-- Vignette<img class="parallax-item parallax-full vignette" data-depth="0.1" data-tilt="0.1" src="images/vignette.png">-->
   </div>
 
   <div class="noselect" id="dialogue-box">
@@ -68,18 +61,18 @@
 
   <!-- Audio -->
   <audio id="wind" autoplay loop style="display:none">
-    <source src="/data/dinosaurs/audio/jungle-ambience.mp3" type="audio/mp3">
+    <source src="data/dinosaurs/audio/jungle-ambience.mp3" type="audio/mp3">
   </audio>
   <audio id="next-sound" style="display:none">
-    <source src="/data/dinosaurs/audio/pencil.mp3" type="audio/mp3">
+    <source src="data/dinosaurs/audio/pencil.mp3" type="audio/mp3">
   </audio>
 
 </body>
 
-<script src="/src/sceneManager.js"></script>
-<script src="/src/dialogue.js"></script>
-<script src="/src/parallax.js"></script>
-<script src="/data/dinosaurs/dinosaurs.js"></script>
+<script src="src/sceneManager.js"></script>
+<script src="src/dialogue.js"></script>
+<script src="src/parallax.js"></script>
+<script src="data/dinosaurs/dinosaurs.js"></script>
 <script>
   var audio = document.getElementById("wind");
   audio.volume = 0.3; // Made silent for now

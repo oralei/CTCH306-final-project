@@ -58,17 +58,17 @@ img {
   background-repeat: no-repeat;
 }
 
-.bg { background-image: url('../medieval/media/sky.png');}
+.bg { background-image: url('media/sky.png');}
 
-.ground1 { background-image: url('../medieval/media/ground1.png');}
+.ground1 { background-image: url('media/ground1.png');}
 
-.ground2 { background-image: url('../medieval/media/ground2.png');}
+.ground2 { background-image: url('media/ground2.png');}
 
-.castle { background-image: url('../medieval/media/castleBack.png');}
+.castle { background-image: url('media/castleBack.png');}
 
 .trees {
   width: 105vw;
   height: 105vh; 
   top: -3vh;
-  background-image: url('../medieval/media/treesForeground.png');
+  background-image: url('media/treesForeground.png');
 }

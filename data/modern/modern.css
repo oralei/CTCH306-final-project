@@ -62,21 +62,9 @@ img {
   background-repeat: no-repeat;
 }
 
-.bg { background-image: url('../modern/media/sky.jpeg');}
+.bg { background-image: url('media/sky.jpeg');}
 
-.eastYork { background-image: url('../modern/media/eastYork.png');}
-
-.ground2 { background-image: url('../medieval/media/ground2.png');}
-
-.castle { background-image: url('../medieval/media/castleBack.png');}
-
-.trees {
-  width: 105vw;
-  height: 105vh; 
-  top: -3vh;
-  background-image: url('../medieval/media/treesForeground.png');
-}
-
+.eastYork { background-image: url('media/eastYork.png');}
 
 /* --------------- PHONE STUFF ---------------- */
 
@@ -89,7 +77,7 @@ img {
   scale: 0.6;
   border: none;
   cursor: pointer;
-  background-image: url('../modern/media/iphoneOff.png');
+  background-image: url('media/iphoneOff.png');
 }
 
 .phone:hover {
@@ -103,11 +91,11 @@ img {
 }
 
 .phone-no-wifi {
-  background-image: url('../modern/media/iphoneNoWIFI.png');
+  background-image: url('media/iphoneNoWIFI.png');
 }
 
 .phone-on {
-  background-image: url('../modern/media/iphoneOn.png');
+  background-image: url('media/iphoneOn.png');
 }
 
 .phone-up:hover {
@@ -156,6 +144,6 @@ img {
 }
 
 .internet-app {
-  background-image: url('../modern/media/browser.png');
+  background-image: url('media/browser.png');
   background-size: cover;
 }

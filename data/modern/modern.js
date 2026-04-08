@@ -9,20 +9,20 @@ speakerColors['Crab'] = '#ffffff';
 speakerColors['You']  = '#ffffff';
 
 // ----- Sounds -----
-var satelliteSound = new Audio('/data/modern/audio/satellite-sound.mp3');
-var towerSound = new Audio('/data/modern/audio/radio-tower.mp3');
+var satelliteSound = new Audio('data/modern/audio/satellite-sound.mp3');
+var towerSound = new Audio('data/modern/audio/radio-tower.mp3');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
-    loadDialogue('/data/modern/crab1.json');
+    loadDialogue('data/modern/crab1.json');
   }
   else if (sceneState == 3){
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
@@ -32,10 +32,10 @@ document.getElementById('satellite').addEventListener('click', () => {
   if (sceneState == 1){
     satelliteSound.currentTime = 0;
     satelliteSound.play();
-    loadDialogue('/data/modern/satellite.json');
+    loadDialogue('data/modern/satellite.json');
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
@@ -45,10 +45,10 @@ document.getElementById('radio-tower').addEventListener('click', () => {
   if (sceneState == 2){
     towerSound.currentTime = 0;
     towerSound.play();
-    loadDialogue('/data/modern/tower.json');
+    loadDialogue('data/modern/tower.json');
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
@@ -81,7 +81,7 @@ phone.addEventListener('click', () => {
   {
     if (hasWIFI == false)
     {
-      loadDialogue('/data/modern/needWIFI.json');
+      loadDialogue('data/modern/needWIFI.json');
       phone.classList.remove("phone-no-wifi");
       phone.classList.remove("phone-up")
       phoneUp = false;
@@ -98,7 +98,7 @@ phone.addEventListener('click', () => {
 
 internetApp.addEventListener('click', () => {
   if (sceneState == 3){
-    loadDialogue('/data/modern/internet.json');
+    loadDialogue('data/modern/internet.json');
   }
 });
 

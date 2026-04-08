@@ -6,21 +6,21 @@ var sceneState = 0;
 console.log(sceneState);
 
 // ---------- SOUNDS -------------
-var dinoSound1 = new Audio('/data/dinosaurs/audio/grumble.mp3');
-var dinoSound2 = new Audio('/data/dinosaurs/audio/dino_roar.mp3');
-var meteorAmbience = new Audio('/data/dinosaurs/audio/meteorTheme.wav');
-var meteorSound = new Audio('/data/dinosaurs/audio/meteorFire.mp3');
+var dinoSound1 = new Audio('data/dinosaurs/audio/grumble.mp3');
+var dinoSound2 = new Audio('data/dinosaurs/audio/dino_roar.mp3');
+var meteorAmbience = new Audio('data/dinosaurs/audio/meteorTheme.wav');
+var meteorSound = new Audio('data/dinosaurs/audio/meteorFire.mp3');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
   if (sceneState == 0){
-    loadDialogue('/data/dinosaurs/dino-crab1.json');
+    loadDialogue('data/dinosaurs/dino-crab1.json');
   }
   else if (sceneState == 2){
-    loadDialogue('/data/dinosaurs/dino-crab2.json');
+    loadDialogue('data/dinosaurs/dino-crab2.json');
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
@@ -30,10 +30,10 @@ document.getElementById('trex').addEventListener('click', () => {
   if (sceneState == 1){
     dinoSound2.currentTime = 0;
     dinoSound2.play();
-    loadDialogue('/data/dinosaurs/trex-dialogue.json');
+    loadDialogue('data/dinosaurs/trex-dialogue.json');
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     dinoSound1.currentTime = 0;
     dinoSound1.play();
     console.log("You need to progress! Scene State: " + sceneState);
@@ -43,11 +43,11 @@ document.getElementById('trex').addEventListener('click', () => {
 // METEOR OBJECT
 document.getElementById('meteor').addEventListener('click', () => {
   if (sceneState == 3){
-    loadDialogue('/data/dinosaurs/meteor.json');
+    loadDialogue('data/dinosaurs/meteor.json');
     meteorSound.play();
   }
   else{
-    loadDialogue('/src/look-around.json');
+    loadDialogue('src/look-around.json');
     console.log("You need to progress! Scene State: " + sceneState);
   }
 });
@@ -70,8 +70,6 @@ function triggerEvent(eventName) {
       break;
   }
 }
-
-
 
 function ShowMeteor()
 {

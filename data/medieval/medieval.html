@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="/CTCH306-final-project/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - medieval</title>
-  <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css"/>
-  <link rel="stylesheet" href="/src/parallax.css"/>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon.png">
+  <link rel="stylesheet" href="src/dialogue.css"/>
+  <link rel="stylesheet" href="src/parallax.css"/>
   <!-- ERA SPECIFIC CSS -->
-  <link rel="stylesheet" href="/data/medieval/medieval.css" />
-  <link rel="stylesheet" href="/data/medieval/medieval-dialogue.css" />
+  <link rel="stylesheet" href="data/medieval/medieval.css" />
+  <link rel="stylesheet" href="data/medieval/medieval-dialogue.css" />
 </head>
 
 <body>
@@ -23,16 +24,16 @@
 
     <div class="parallax-item parallax-full castle" data-depth="0.1" data-tilt="0.1"></div>
     <!-- CHURCH ! -->
-    <img class="parallax-item noselect" data-depth="0.14" data-tilt="0.11" id='church' src="/data/medieval/media/church.png">
+    <img class="parallax-item noselect" data-depth="0.14" data-tilt="0.11" id='church' src="data/medieval/media/church.png">
 
     <div class="parallax-item parallax-full ground2" data-depth="0.13" data-tilt="0.1"></div>
     <div class="parallax-item parallax-full ground1" data-depth="0.22" data-tilt="0.2"></div>
 
     <!-- CRAB ! -->
-    <img class="parallax-item noselect" data-depth="0.4" data-tilt="1" id='crab' src="/data/medieval/media/crabFlag.png">
+    <img class="parallax-item noselect" data-depth="0.4" data-tilt="1" id='crab' src="data/medieval/media/crabFlag.png">
 
     <!-- WAR ! -->
-    <img class="parallax-item noselect" data-depth="0.22" data-tilt="0.22" id='war' src="/data/medieval/media/war.png">
+    <img class="parallax-item noselect" data-depth="0.22" data-tilt="0.22" id='war' src="data/medieval/media/war.png">
     
     <div class="parallax-item parallax-full trees" data-depth="0.34" data-tilt="0.22"></div>
 
@@ -53,20 +54,20 @@
 
   <!-- Audio -->
   <audio id="wind" autoplay loop style="display:none">
-    <source src="/data/medieval/audio/fantasy_music.mp3" type="audio/mp3">
+    <source src="data/medieval/audio/fantasy_music.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
   <audio id="next-sound" style="display:none">
-    <source src="/data/medieval/audio/page-flip.mp3" type="audio/mp3">
+    <source src="data/medieval/audio/page-flip.mp3" type="audio/mp3">
   </audio>
 
 </body>
 
-<script src="/src/sceneManager.js"></script>
-<script src="/src/dialogue.js"></script>
-<script src="/src/parallax.js"></script>
-<script src="/data/medieval/medieval.js"></script>
+<script src="src/sceneManager.js"></script>
+<script src="src/dialogue.js"></script>
+<script src="src/parallax.js"></script>
+<script src="data/medieval/medieval.js"></script>
 <script>
   var audio = document.getElementById("wind");
   audio.volume = 0.4; // Made silent for now

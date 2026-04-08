@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="/CTCH306-final-project/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tdc - modern</title>
-  <link rel="icon" type="image/x-icon" href="/src/images/favicon.png">
-  <link rel="stylesheet" href="/src/dialogue.css"/>
-  <link rel="stylesheet" href="/src/parallax.css"/>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon.png">
+  <link rel="stylesheet" href="src/dialogue.css"/>
+  <link rel="stylesheet" href="src/parallax.css"/>
   <!-- ERA SPECIFIC CSS -->
-  <link rel="stylesheet" href="/data/modern/modern.css" />
-  <link rel="stylesheet" href="/data/modern/modern-dialogue.css" />
+  <link rel="stylesheet" href="data/modern/modern.css" />
+  <link rel="stylesheet" href="data/modern/modern-dialogue.css" />
 </head>
 
 <body>
@@ -22,13 +23,13 @@
     <div class="parallax-item parallax-full bg" data-depth="0.05" data-tilt="0.08"></div>
 
     <!-- TOWER ! -->
-    <img class="parallax-item" data-depth="0.1" data-tilt="0.3" id='radio-tower' src="/data/modern/media/cellphone.png">
+    <img class="parallax-item" data-depth="0.1" data-tilt="0.3" id='radio-tower' src="data/modern/media/cellphone.png">
     <!-- SATELLITE ! -->
-    <img class="parallax-item" data-depth="0.11" data-tilt="0.11" id='satellite' src="/data/modern/media/satellite.png">
+    <img class="parallax-item" data-depth="0.11" data-tilt="0.11" id='satellite' src="data/modern/media/satellite.png">
 
     <div class="parallax-item parallax-full eastYork" data-depth="0.11" data-tilt="0.1"></div>
     <!-- CRAB ! -->
-    <img class="parallax-item" data-depth="0.23" data-tilt="0.3" id='crab' src="/data/modern/media/crab.png">
+    <img class="parallax-item" data-depth="0.23" data-tilt="0.3" id='crab' src="data/modern/media/crab.png">
 
     <!-- DEBUG NEXT BUTTONS --> <!--
     <div class="parallax-item test-title">TIS BUT A SCRATCH</div>
@@ -56,7 +57,7 @@
 
   <div class="noselect" id="dialogue-box">
     <div class="noselect" id="app-name"> 
-      <img class="text-icon" src="/data/modern/media/textMsg.png">
+      <img class="text-icon" src="data/modern/media/textMsg.png">
       Messages App
     </div>
     <div class="noselect" id="speaker"></div>
@@ -68,20 +69,19 @@
 
   <!-- Audio -->
   <audio id="street" autoplay loop style="display:none">
-    <source src="/data/modern/audio/street.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
+    <source src="data/modern/audio/street.mp3" type="audio/mp3">
   </audio>
 
   <audio id="next-sound" style="display:none">
-    <source src="/data/modern/audio/text-type.mp3" type="audio/mp3">
+    <source src="data/modern/audio/text-type.mp3" type="audio/mp3">
   </audio>
 
 </body>
 
-<script src="/src/sceneManager.js"></script>
-<script src="/src/dialogue.js"></script>
-<script src="/src/parallax.js"></script>
-<script src="/data/modern/modern.js"></script>
+<script src="src/sceneManager.js"></script>
+<script src="src/dialogue.js"></script>
+<script src="src/parallax.js"></script>
+<script src="data/modern/modern.js"></script>
 <script>
   var audio = document.getElementById("street");
   audio.volume = 0.2; // Made silent for now
