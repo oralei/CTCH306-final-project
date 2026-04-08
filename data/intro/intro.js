@@ -44,7 +44,7 @@ const dialogueVars = {
 document.getElementById('crab').addEventListener('click', () => {
   moveObject('crab', 13, 13);
   scaleObject('crab', 1.1)
-  loadDialogue('/data/intro/intro.json');
+  loadDialogue('data/intro/intro.json');
   document.getElementById("crab").src="data/coastline/media/testCrab.png";
 });
 

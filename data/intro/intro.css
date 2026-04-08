@@ -3,33 +3,33 @@
 
 @font-face {
   font-family: PixelOperator; /* set name */
-  src: url(data/src/pixel_operator/PixelOperator.ttf); /* url of the font */
+  src: url(../../src/pixel_operator/PixelOperator.ttf); /* url of the font */
 }
 
 .bg {
-    background-image: url('media/coastSky.png');
+    background-image: url('../coastline/media/coastSky.png');
 }
 
 .beach {
-    background-image: url('media/coastBeach2.png');
+    background-image: url('../coastline/media/coastBeach2.png');
 }
 
 .ocean {
-    background-image: url('media/testOceanrender.png');
+    background-image: url('../coastline/media/testOceanrender.png');
     animation-name: oceanWaves;
     animation: oceanWaves 4s ease-in-out infinite alternate;
 }
 
 .back-hills {
-    background-image: url('media/rockyCliffFar.png');
+    background-image: url('../coastline/media/rockyCliffFar.png');
 }
 
 .far-trees {
-    background-image: url('media/farTrees.png');
+    background-image: url('../coastline/media/farTrees.png');
 }
 
 #front-hill {
-    background-image: url('media/coastSideRocks.png');
+    background-image: url('../coastline/media/coastSideRocks.png');
     width: 107vw;
     height: 107vh;
     top: -1%;
