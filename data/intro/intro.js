@@ -18,7 +18,7 @@ requestAnimationFrame(() => requestAnimationFrame(() => {
   }, 300);
 }));
 
-var playButtonSound = new Audio('/data/coastline/audio/playButton.mp3');
+var playButtonSound = new Audio('data/coastline/audio/playButton.mp3');
 
 // Play button: fade menu out, then fade scene in
 document.getElementById('play-btn').addEventListener('click', () => {
@@ -45,17 +45,17 @@ document.getElementById('crab').addEventListener('click', () => {
   moveObject('crab', 13, 13);
   scaleObject('crab', 1.1)
   loadDialogue('/data/intro/intro.json');
-  document.getElementById("crab").src="/data/coastline/media/testCrab.png";
+  document.getElementById("crab").src="data/coastline/media/testCrab.png";
 });
 
 document.getElementById('seagull').addEventListener('click', () => {
   seagullSound.play();
-  loadDialogue('/data/intro/seagull.json');
+  loadDialogue('data/intro/seagull.json');
 });
 
-var crabSound = new Audio('../src/crab-sounds/crabSound1.wav');
+var crabSound = new Audio('src/crab-sounds/crabSound1.wav');
 crabSound.volume = 1;
-var seagullSound = new Audio('../data/coastline/audio/seagull.mp3');
+var seagullSound = new Audio('data/coastline/audio/seagull.mp3');
 
 function triggerEvent(eventName) {
   switch(eventName) {
