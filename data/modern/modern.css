@@ -73,7 +73,7 @@ img {
   width: 512px;
   height: 1017px;
   left: 5%;
-  bottom: -70%;
+  bottom: -35vh;   /* was -70% */
   scale: 0.6;
   border: none;
   cursor: pointer;
@@ -82,12 +82,17 @@ img {
 
 .phone:hover {
   scale: 0.62;
-  bottom: -65%;
+  bottom: -28vh;   /* was -65% */
 }
 
 .phone-up {
   scale: 0.62;
-  bottom: -15%;
+  bottom: 5vh;     /* was -15% */
+}
+
+.phone-up:hover {
+  scale: 0.64;
+  bottom: 5vh;     /* was -15% */
 }
 
 .phone-no-wifi {
@@ -96,11 +101,6 @@ img {
 
 .phone-on {
   background-image: url('media/iphoneOn.png');
-}
-
-.phone-up:hover {
-  scale: 0.64;
-  bottom: -15%;
 }
 
 .phone-screen {
