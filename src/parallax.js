@@ -56,6 +56,7 @@ document.addEventListener('mouseleave', () => {
 });
 
 var hoverSound = new Audio('src/hoverSound.mp3');
+hoverSound.volume = 0.7;
 
 window.onHover = function()
 {
