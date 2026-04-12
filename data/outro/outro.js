@@ -9,7 +9,7 @@ var turnedBack = true;
 
 // ---------- SOUNDS -------------
 var crabSound = new Audio('data/dinosaurs/audio/grumble.mp3');
-var music = new Audio('data/outro/audio/mmonlitOcean.wav');
+var music = new Audio('data/outro/audio/moonlitOcean.wav');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
