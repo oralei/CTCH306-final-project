@@ -72,7 +72,7 @@ img {
   position: absolute;
   width: 512px;
   height: 1017px;
-  left: 5%;
+  left: 20%;
   bottom: -35vh;   /* was -70% */
   scale: 0.6;
   border: none;
@@ -87,12 +87,12 @@ img {
 
 .phone-up {
   scale: 0.62;
-  bottom: 5vh;     /* was -15% */
+  bottom: 1vh;     /* was -15% */
 }
 
 .phone-up:hover {
   scale: 0.64;
-  bottom: 5vh;     /* was -15% */
+  bottom: 1vh;     /* was -15% */
 }
 
 .phone-no-wifi {

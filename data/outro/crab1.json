@@ -25,6 +25,7 @@
     "5": {
       "speaker": "Crab",
       "text": "Indeed we did.",
+      "event": "start_music",
       "next": "6"
     },
     "6": {

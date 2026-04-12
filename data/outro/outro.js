@@ -9,6 +9,7 @@ var turnedBack = true;
 
 // ---------- SOUNDS -------------
 var crabSound = new Audio('data/dinosaurs/audio/grumble.mp3');
+var music = new Audio('data/outro/audio/mmonlitOcean.wav');
 
 // CRAB OBJECT
 document.getElementById('crab').addEventListener('click', () => {
@@ -45,6 +46,8 @@ function triggerEvent(eventName) {
     case "restart_game":
       SceneManager.restart();
       break;
+    case "start_music":
+      music.play();
   }
 }
 
