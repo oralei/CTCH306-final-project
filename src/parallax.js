@@ -54,3 +54,11 @@ document.addEventListener('mouseleave', () => {
         item.style.transform = `perspective(${config.perspective}px) translate(0px, 0px) rotateX(0deg) rotateY(0deg)`;
     });
 });
+
+var hoverSound = new Audio('hoverSound.mp3');
+
+function onHover()
+{
+    hoverSound.currentTime = 0;
+    hoverSound.play();
+}
