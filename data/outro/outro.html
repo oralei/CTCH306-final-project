@@ -57,6 +57,8 @@
   <script src="data/outro/outro.js"></script>
   <script>
     var audio = document.getElementById("wind");
-    audio.volume = 0.1; // Made silent for now
+    audio.volume = 0.1;
+    audio.currentTime = 0;
+    audio.play();
   </script>
 </html>
