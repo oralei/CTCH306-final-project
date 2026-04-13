@@ -120,7 +120,7 @@
 
 @keyframes growLoop {
   from {scale: 0.8;}
-  to {top: 0.94%;}
+  to {scale: 1;}
 }
 
 #exclaim {
@@ -128,7 +128,7 @@
     width: 72px;
     height: 115px;
     left: 75%;
-    bottom: 8%;
+    bottom: 30%;
     scale: 0.8;
     border: none;
     background-image: url('media/exclaim.png');
