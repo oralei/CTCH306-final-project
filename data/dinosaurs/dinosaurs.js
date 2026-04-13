@@ -73,10 +73,10 @@ function triggerEvent(eventName) {
     case "crab_thinks":
       hasThought = true;
       break;
-    case "add_exlaim":
+    case "add_exclaim":
       questMarker.classList.remove("hidden");
       break;
-    case "remove_exlaim":
+    case "remove_exclaim":
       questMarker.classList.add("hidden");
       break;
   }
