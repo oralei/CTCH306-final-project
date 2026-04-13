@@ -128,9 +128,10 @@
     width: 72px;
     height: 115px;
     left: 75%;
-    bottom: 12%;
+    bottom: 8%;
     scale: 0.8;
     border: none;
+    background-image: url('media/exclaim.png');
 
     animation-name: growLoop;
     animation: growLoop 1s ease infinite alternate;
