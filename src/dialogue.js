@@ -95,29 +95,46 @@ function showNode(nodeKey) {
   }
 }
 
-function endDialogue() {
-  box.onclick = null;
-  hintEl.classList.remove('visible');
-  textEl.classList.add('done');
-  setTimeout(hideDialogueBox, 200);
-}
-
-// Dialogue box show and hide animations:
+let dialogueTimeout; // Variable to track our timeouts
 
 function showDialogueBox() {
   const box = document.getElementById('dialogue-box');
+  
+  // 1. Cancel any active hide timers so the box doesn't vanish unexpectedly
+  if (dialogueTimeout) {
+    clearTimeout(dialogueTimeout);
+    dialogueTimeout = null;
+  }
+  
+  // 2. Clear any lingering inline transforms so your CSS .visible class can work
+  box.style.transform = '';
   box.style.display = 'block';
+  
   requestAnimationFrame(() => requestAnimationFrame(() => box.classList.add('visible')));
 }
 
 function hideDialogueBox() {
   const box = document.getElementById('dialogue-box');
+  
+  // Apply inline style to slide out
   box.style.transform = 'translateX(-50%) translateY(100px)';
   box.classList.remove('visible');
-    setTimeout(() => {
+  
+  // 3. Track this timeout!
+  dialogueTimeout = setTimeout(() => {
     box.style.display = 'none';
     box.style.transform = '';
   }, 500);
+}
+
+function endDialogue() {
+  box.onclick = null;
+  hintEl.classList.remove('visible');
+  textEl.classList.add('done');
+  
+  // 4. Track this timeout too, just in case they rapid-click
+  if (dialogueTimeout) clearTimeout(dialogueTimeout);
+  dialogueTimeout = setTimeout(hideDialogueBox, 200);
 }
 
 function refreshCenter(item) {
