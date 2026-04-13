@@ -89,12 +89,13 @@
     "13": {
       "speaker": "Crab",
       "text": "I shall dwell on it. Thank you.",
+      "event": "add_state",
       "next": "empty"
     },
     "empty": {
       "speaker": "",
       "text": "",
-      "event": "add_state",
+      "event": "add_exclaim",
       "next": null
     }
   }

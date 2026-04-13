@@ -4,21 +4,42 @@
     "1": {
       "speaker": "Crab",
       "text": "I have been thinking about what you said.",
+      "event": "remove_exclaim",
       "next": "2"
     },
     "2": {
       "speaker": "Crab",
-      "text": "If meaning comes from how we use our time...",
+      "text": "About time. And what it means to use it.",
       "next": "3"
     },
     "3": {
       "speaker": "Crab",
-      "text": "Then I should be more thoughtful of it.",
+      "text": "My kind has been here a very long time.",
       "next": "4"
     },
     "4": {
       "speaker": "Crab",
-      "text": "Perhaps I will count how many waves will crash tomorrow.",
+      "text": "The dinosaurs had so little time.",
+      "next": "5"
+    },
+    "5": {
+      "speaker": "Crab",
+      "text": "But they filled it with something.",
+      "next": "6"
+    },
+    "6": {
+      "speaker": "Crab",
+      "text": "I wonder what I have filled mine with.",
+      "next": "7"
+    },
+    "7": {
+      "speaker": "Crab",
+      "text": "I am not sure I know the answer.",
+      "next": "8"
+    },
+    "8": {
+      "speaker": "Crab",
+      "text": "But I think that is the right question to ask.",
       "next": "empty"
     },
     "empty": {

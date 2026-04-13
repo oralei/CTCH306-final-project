@@ -110,11 +110,28 @@
     top: 3%;
 }
 
-
 #crab:hover {
     scale: 1.5;
 }
 
 #dino:hover {
     scale: 1.04;
+}
+
+@keyframes growLoop {
+  from {scale: 0.8;}
+  to {top: 0.94%;}
+}
+
+#exclaim {
+    position: absolute;
+    width: 72px;
+    height: 115px;
+    left: 75%;
+    bottom: 12%;
+    scale: 0.8;
+    border: none;
+
+    animation-name: growLoop;
+    animation: growLoop 1s ease infinite alternate;
 }

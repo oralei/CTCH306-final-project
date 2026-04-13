@@ -75,6 +75,7 @@ function showNode(nodeKey) {
       btn.textContent = applyVariables(choice.text);
       btn.onclick = (e) => {
         e.stopPropagation();
+        nextSFX.play();
         showNode(choice.next);
       };
       choicesEl.appendChild(btn);

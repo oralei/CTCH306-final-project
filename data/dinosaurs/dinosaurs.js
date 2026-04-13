@@ -5,6 +5,8 @@ SceneManager.init('dinosaurs')
 var sceneState = 0;
 console.log(sceneState);
 
+questMarker = document.getElementById('exclaim');
+
 // ---------- SOUNDS -------------
 var dinoSound1 = new Audio('data/dinosaurs/audio/grumble.mp3');
 var dinoSound2 = new Audio('data/dinosaurs/audio/dino_roar.mp3');
@@ -67,6 +69,15 @@ function triggerEvent(eventName) {
       break;
     case "meteor_crash":
       MeteorCrash();
+      break;
+    case "crab_thinks":
+      hasThought = true;
+      break;
+    case "add_exlaim":
+      questMarker.classList.remove("hidden");
+      break;
+    case "remove_exlaim":
+      questMarker.classList.add("hidden");
       break;
   }
 }

@@ -8,12 +8,13 @@
     },
     "2": {
       "speaker": "Crab",
-      "text": "Oh, nothing really. Just watching the waves as usual.",
+      "text": "Oh, nothing really. Just thinking really.",
+      "event": "start_music",
       "next": "3"
     },
     "3": {
       "speaker": "Crab",
-      "text": "It's gotten quite dark has it not?",
+      "text": "It's gotten quite dark, has it not?",
       "event": "turn_around",
       "next": "4"
     },
@@ -25,7 +26,6 @@
     "5": {
       "speaker": "Crab",
       "text": "Indeed we did.",
-      "event": "start_music",
       "next": "6"
     },
     "6": {
